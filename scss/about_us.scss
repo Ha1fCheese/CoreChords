@@ -1,0 +1,167 @@
+@font-face {
+  font-family: "sitka1";
+  src: url("../content/fonts/sitka-small-599.ttf");
+}
+$fontColor: #fdfdfd;
+$bgDivColor: #1e1f22;
+$borderColor: #3a4f67;
+$shadowColor: rgba(0, 0, 0, 0.5);
+
+$fontSizeM: 1.58vh;
+$fontSizeL: 2vh;
+$fontSizeXL: 3.5vh;
+$fontSizeXXL: 6vh;
+
+.logo{
+  width: 131.97px;
+  height: 30.08px;
+}
+body{
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+  font-family: "Calibri Light";
+  background-color: $bgDivColor;
+  header{
+    nav{
+      background-color: #0d243f;
+      padding-top: 6px;
+      padding-bottom: 5px;
+      color: white;
+      display: flex;
+      position: relative;
+      box-shadow: $shadowColor 0 3px 10px 0;
+      .nav_main__div {
+        margin: 0 10vw 0 10vw;
+        width: 100%;
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: space-between;
+        .logo_div {
+          padding: 0 7vw 9px 0;
+        }
+        div {
+          display: inline-block;
+          user-select: none;
+          flex-wrap: nowrap;
+          width: fit-content;
+          ul {
+            display: flex;
+            padding-left: 0;
+            li {
+              display: inline-block;
+              font-size: $fontSizeM;
+              a {
+                text-transform: uppercase;
+                color: white;
+                text-decoration: none;
+                padding: 25px 15px 21px 15px;
+              }
+            }
+            li:hover {
+              a {
+                color: palegoldenrod;
+                text-decoration: none;
+                background-color: #0a1c31;
+                //border-bottom: 1px solid palegoldenrod;
+                transition: 0.3s;
+              }
+            }
+            .here{
+              border-bottom: 1px solid palegoldenrod;
+            }
+          }
+        }
+        form {
+          font-size: $fontSizeM;
+          position: relative;
+          width: 15vw;
+          .label__search {
+            position: relative;
+            input {
+              position: relative;
+              padding-top: 5px;
+              padding-bottom: 5px;
+              width: 100%;
+              background-color: transparent;
+              outline: none;
+              border: none;
+              border-bottom: solid 1px white;
+              color: white;
+              z-index: 1;
+            }
+            .popular_search_placeholder {
+              position: absolute;
+              top: 0;
+              font-family: "Calibri Light";
+              color: rgba(255, 255, 255, 0.5);
+            }
+            input:hover, input:focus {
+              background-color: rgba(11, 25, 54, 0.5);
+              transition: 0.3s;
+            }
+            input:focus ~ .popular_search_placeholder, input:not(:invalid) ~ .popular_search_placeholder{
+              top: -6px;
+              color: transparent;
+              transition: 0.5s;
+            }
+          }
+        }
+      }
+    }
+  }
+.about__us{
+  display: flex;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  p{
+    color: $fontColor;
+    font-size: $fontSizeL;
+    font-family: "Sitka Banner";
+    text-align: justify;
+    .citate__span{
+      background-color: #2d3034;
+      font-style: italic;
+      font-family: "Calibri Light";
+    }
+  }
+}
+  footer{
+    margin-top: 30px;
+    padding: 10px 0 10px 0;
+    background-color: #2a2a2a;
+    .footer__div{
+      text-align: center;
+      p{
+        padding: 0 0 0 0;
+        margin: 0 0 0 0 ;
+        color: $fontColor;
+        font-size: $fontSizeL;
+        font-family: "Sitka Banner";
+      }
+    }
+  }
+  #btnScrollToTop{
+    padding: 1.7vw 2vw;
+    box-shadow: $shadowColor 0 0 10px 4px;
+    border-radius: 100px 100px 100px 100px;
+    border: none;
+    outline: none;
+    background: url("../content/svg/btnscrolltop.svg") no-repeat center center;
+    position: fixed;
+    bottom: -50px;
+    right: 35px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, bottom 0.3s ease-in-out;
+  }
+  #btnScrollToTop.show{
+    bottom:20px;
+    opacity: 1;
+  }
+  #btnScrollToTop:hover{
+    box-shadow: $shadowColor 0 0 5px 2px;
+    filter: invert(1);
+    scale: 1.1;
+    transition: 0.3s ease-in-out;
+  }
+}

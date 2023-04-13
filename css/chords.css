@@ -1,0 +1,296 @@
+@font-face {
+  font-family: "sitka1";
+  src: url("../content/fonts/sitka-small-599.ttf");
+}
+.logo {
+  width: 131.97px;
+  height: 30.08px;
+}
+
+body {
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+  font-family: "Calibri Light";
+  background-color: #1e1f22;
+}
+body header nav {
+  background-color: #0d243f;
+  padding-top: 6px;
+  padding-bottom: 5px;
+  color: white;
+  display: flex;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 3px 10px 0;
+}
+body header nav .nav_main__div {
+  margin: 0 10vw 0 10vw;
+  width: 100%;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+}
+body header nav .nav_main__div .logo_div {
+  padding: 0 7vw 9px 0;
+}
+body header nav .nav_main__div div {
+  display: inline-block;
+  user-select: none;
+  flex-wrap: nowrap;
+  width: fit-content;
+}
+body header nav .nav_main__div div ul {
+  display: flex;
+  padding-left: 0;
+}
+body header nav .nav_main__div div ul li {
+  display: inline-block;
+  font-size: 1.58vh;
+}
+body header nav .nav_main__div div ul li a {
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+  padding: 25px 15px 21px 15px;
+}
+body header nav .nav_main__div div ul li:hover a {
+  color: palegoldenrod;
+  text-decoration: none;
+  background-color: #0a1c31;
+  transition: 0.3s ease-in-out;
+}
+body header nav .nav_main__div form {
+  font-size: 1.58vh;
+  position: relative;
+  width: 15vw;
+}
+body header nav .nav_main__div form .label__search {
+  position: relative;
+}
+body header nav .nav_main__div form .label__search input {
+  position: relative;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 100%;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-bottom: solid 1px white;
+  color: white;
+  z-index: 1;
+}
+body header nav .nav_main__div form .label__search .popular_search_placeholder {
+  position: absolute;
+  top: 0;
+  font-family: "Calibri Light";
+  color: rgba(255, 255, 255, 0.5);
+}
+body header nav .nav_main__div form .label__search input:hover, body header nav .nav_main__div form .label__search input:focus {
+  background-color: rgba(11, 25, 54, 0.5);
+  transition: 0.3s;
+}
+body header nav .nav_main__div form .label__search input:focus ~ .popular_search_placeholder, body header nav .nav_main__div form .label__search input:not(:invalid) ~ .popular_search_placeholder {
+  top: -6px;
+  color: transparent;
+  transition: 0.5s;
+}
+body .new_chords__div {
+  padding: 10px 0 10px 0;
+  margin-bottom: 30px;
+  width: 100%;
+}
+body .new_chords__div p {
+  font-family: "Calibri Light";
+  color: #fdfdfd;
+  display: inline-block;
+  margin: 10px 0 0 10vw;
+  font-size: 3.5vh;
+}
+body .new_chords__div .new_chords__div__items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 10px 10vw 10px 10vw;
+}
+body .new_chords__div .new_chords__div__items a {
+  flex-basis: calc(33% - 5vw);
+  font-family: "Calibri Light";
+  color: #fdfdfd;
+  display: inline-block;
+  margin: 4px 0 5px 0;
+  padding: 4px 0 6px 5px;
+  width: 10vw;
+  border-left: solid 5px #3a4f67;
+  border-right: solid 0px transparent;
+  text-decoration: none;
+  font-size: 2vh;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+body .new_chords__div .new_chords__div__items a:hover, body .new_chords__div .new_chords__div__items a:focus {
+  color: palegoldenrod;
+  background-color: #2b2b2c;
+  border-left: solid 1px palegoldenrod;
+  border-right: solid 4px transparent;
+  box-shadow: none;
+  transition: 0.2s;
+}
+body .perfomer__main__div {
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+body .perfomer__main__div .header {
+  display: flex;
+}
+body .perfomer__main__div .header .perfomer__img__div {
+  display: inline-block;
+}
+body .perfomer__main__div .header .perfomer__img__div img {
+  box-shadow: rgba(0, 0, 0, 0.5) 0 3px 10px -1px;
+}
+body .perfomer__main__div .header .perfomer_info {
+  margin-left: 5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+body .perfomer__main__div .header .perfomer_info .perfomer__name__div p, body .perfomer__main__div .header .perfomer_info .perfomer__name__div a {
+  text-decoration: none;
+  color: #fdfdfd;
+  font-family: "Calibri Light";
+  font-size: 3.5vh;
+  margin: 0 0 0 0;
+}
+body .perfomer__main__div .header .perfomer_info .perfomer__name__div a:hover {
+  color: palegoldenrod;
+}
+body .perfomer__main__div .header .perfomer_info .stats {
+  color: #fdfdfd;
+}
+body .perfomer__main__div .header .perfomer_info .stats p {
+  margin: 0 0 0 0;
+}
+body .perfomer__main__div .main_part_chords {
+  display: flex;
+  margin-top: 40px;
+}
+body .perfomer__main__div .main_part_chords .applicature__div {
+  display: flex;
+  width: 15vw;
+  flex-direction: column;
+}
+body .perfomer__main__div .main_part_chords .applicature__div .applicature__header p {
+  color: #fdfdfd;
+}
+body .perfomer__main__div .main_part_chords .applicature__div .applicature_images {
+  display: flex;
+  flex-wrap: wrap;
+}
+body .perfomer__main__div .main_part_chords .applicature__div .applicature_images img {
+  margin-right: 1vw;
+  margin-bottom: 1vw;
+  height: 5vw;
+  width: 5vw;
+  filter: invert(0.88);
+}
+body .perfomer__main__div .main_part_chords .chords {
+  display: flex;
+  flex-direction: column;
+}
+body .perfomer__main__div .main_part_chords .chords .control_buttons {
+  color: #fdfdfd;
+}
+body .perfomer__main__div .main_part_chords .chords .control_buttons p {
+  display: inline-block;
+  margin: 0 7px 0 7px;
+  font-size: 2vh;
+}
+body .perfomer__main__div .main_part_chords .chords .control_buttons button {
+  height: 1.5vw;
+  width: 1.5vw;
+  border-radius: 0.3vw 0.3vw 0.3vw 0.3vw;
+  outline: none;
+  border: none;
+  color: #fdfdfd;
+  font-size: 2vh;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 3px 10px 0;
+}
+body .perfomer__main__div .main_part_chords .chords .control_buttons .btn__ton {
+  background-color: #9d2121;
+}
+body .perfomer__main__div .main_part_chords .chords .control_buttons .btn__ton:hover, body .perfomer__main__div .main_part_chords .chords .control_buttons .btn__ton:focus {
+  background-color: #851c1c;
+  box-shadow: none;
+  border: solid 1px palegoldenrod;
+  transition: 0.2s ease-in-out;
+}
+body .perfomer__main__div .main_part_chords .chords .control_buttons .btn__scroll {
+  background-color: #239a37;
+}
+body .perfomer__main__div .main_part_chords .chords .control_buttons .btn__scroll:hover, body .perfomer__main__div .main_part_chords .chords .control_buttons .btn__scroll:focus {
+  background-color: #1d7a2e;
+  box-shadow: none;
+  border: solid 1px palegoldenrod;
+  transition: 0.2s ease-in-out;
+}
+body .perfomer__main__div .main_part_chords .chords .control_buttons .btn__fontsize {
+  background-color: #23629a;
+}
+body .perfomer__main__div .main_part_chords .chords .control_buttons .btn__fontsize:hover, body .perfomer__main__div .main_part_chords .chords .control_buttons .btn__fontsize:focus {
+  background-color: #1c4e7a;
+  box-shadow: none;
+  border: solid 1px palegoldenrod;
+  transition: 0.2s ease-in-out;
+}
+body .perfomer__main__div .main_part_chords .chords pre {
+  font-size: 2vh;
+  color: #fdfdfd;
+}
+body .perfomer__main__div .main_part_chords .chords pre span {
+  background-color: #3b3b3b;
+  padding: 0 2px 0 2px;
+  border-radius: 3px;
+}
+body footer {
+  margin-top: 30px;
+  padding: 10px 0 10px 0;
+  background-color: #2a2a2a;
+}
+body footer .footer__div {
+  text-align: center;
+}
+body footer .footer__div p {
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+  color: #fdfdfd;
+  font-size: 2vh;
+  font-family: "Sitka Banner";
+}
+body #btnScrollToTop {
+  padding: 1.7vw 2vw;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 0 10px 4px;
+  border-radius: 100px 100px 100px 100px;
+  border: none;
+  outline: none;
+  background: url("../content/svg/btnscrolltop.svg") no-repeat center center;
+  position: fixed;
+  bottom: -50px;
+  right: 35px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out, bottom 0.3s ease-in-out;
+}
+body #btnScrollToTop.show {
+  bottom: 20px;
+  cursor: pointer;
+  opacity: 1;
+}
+body #btnScrollToTop:hover {
+  box-shadow: rgba(0, 0, 0, 0.5) 0 0 5px 2px;
+  filter: invert(1);
+  scale: 1.1;
+  transition: 0.2s ease-in-out;
+}
+
+/*# sourceMappingURL=chords.css.map */

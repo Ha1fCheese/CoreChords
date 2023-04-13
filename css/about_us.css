@@ -1,0 +1,155 @@
+@font-face {
+  font-family: "sitka1";
+  src: url("../content/fonts/sitka-small-599.ttf");
+}
+.logo {
+  width: 131.97px;
+  height: 30.08px;
+}
+
+body {
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+  font-family: "Calibri Light";
+  background-color: #1e1f22;
+}
+body header nav {
+  background-color: #0d243f;
+  padding-top: 6px;
+  padding-bottom: 5px;
+  color: white;
+  display: flex;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 3px 10px 0;
+}
+body header nav .nav_main__div {
+  margin: 0 10vw 0 10vw;
+  width: 100%;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+}
+body header nav .nav_main__div .logo_div {
+  padding: 0 7vw 9px 0;
+}
+body header nav .nav_main__div div {
+  display: inline-block;
+  user-select: none;
+  flex-wrap: nowrap;
+  width: fit-content;
+}
+body header nav .nav_main__div div ul {
+  display: flex;
+  padding-left: 0;
+}
+body header nav .nav_main__div div ul li {
+  display: inline-block;
+  font-size: 1.58vh;
+}
+body header nav .nav_main__div div ul li a {
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+  padding: 25px 15px 21px 15px;
+}
+body header nav .nav_main__div div ul li:hover a {
+  color: palegoldenrod;
+  text-decoration: none;
+  background-color: #0a1c31;
+  transition: 0.3s;
+}
+body header nav .nav_main__div div ul .here {
+  border-bottom: 1px solid palegoldenrod;
+}
+body header nav .nav_main__div form {
+  font-size: 1.58vh;
+  position: relative;
+  width: 15vw;
+}
+body header nav .nav_main__div form .label__search {
+  position: relative;
+}
+body header nav .nav_main__div form .label__search input {
+  position: relative;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 100%;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-bottom: solid 1px white;
+  color: white;
+  z-index: 1;
+}
+body header nav .nav_main__div form .label__search .popular_search_placeholder {
+  position: absolute;
+  top: 0;
+  font-family: "Calibri Light";
+  color: rgba(255, 255, 255, 0.5);
+}
+body header nav .nav_main__div form .label__search input:hover, body header nav .nav_main__div form .label__search input:focus {
+  background-color: rgba(11, 25, 54, 0.5);
+  transition: 0.3s;
+}
+body header nav .nav_main__div form .label__search input:focus ~ .popular_search_placeholder, body header nav .nav_main__div form .label__search input:not(:invalid) ~ .popular_search_placeholder {
+  top: -6px;
+  color: transparent;
+  transition: 0.5s;
+}
+body .about__us {
+  display: flex;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+body .about__us p {
+  color: #fdfdfd;
+  font-size: 2vh;
+  font-family: "Sitka Banner";
+  text-align: justify;
+}
+body .about__us p .citate__span {
+  background-color: #2d3034;
+  font-style: italic;
+  font-family: "Calibri Light";
+}
+body footer {
+  margin-top: 30px;
+  padding: 10px 0 10px 0;
+  background-color: #2a2a2a;
+}
+body footer .footer__div {
+  text-align: center;
+}
+body footer .footer__div p {
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+  color: #fdfdfd;
+  font-size: 2vh;
+  font-family: "Sitka Banner";
+}
+body #btnScrollToTop {
+  padding: 1.7vw 2vw;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 0 10px 4px;
+  border-radius: 100px 100px 100px 100px;
+  border: none;
+  outline: none;
+  background: url("../content/svg/btnscrolltop.svg") no-repeat center center;
+  position: fixed;
+  bottom: -50px;
+  right: 35px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out, bottom 0.3s ease-in-out;
+}
+body #btnScrollToTop.show {
+  bottom: 20px;
+  opacity: 1;
+}
+body #btnScrollToTop:hover {
+  box-shadow: rgba(0, 0, 0, 0.5) 0 0 5px 2px;
+  filter: invert(1);
+  scale: 1.1;
+  transition: 0.3s ease-in-out;
+}
+
+/*# sourceMappingURL=about_us.css.map */
