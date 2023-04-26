@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="css/chords.css" rel="stylesheet">
+  <link href="css/chords.css" rel="stylesheet" type="text/css">
   <title>CoreChords - Далеко летит дорога (Впереди веселья много)</title>
 </head>
 <body>
@@ -77,7 +77,7 @@
 <div class="new_chords__div">
   <p>Новые подборы аккордов</p>
   <div class="new_chords__div__items">
-    <a href="chords.html">Гражданская оборона - Далеко летит дорога (Впереди веселья много)</a>
+    <a href="chords.html">Гражданская оборона - Далеко бежит дорога (Впереди веселья много)</a>
     <a href="#">Пример названия</a>
     <a href="#">Пример названия</a>
     <a href="#">Пример названия</a>
@@ -114,7 +114,7 @@
     </div>
     <div class="chords">
       <div class="control_buttons">
-        <button class="btn__ton">-</button><p>Тон</p><button class="btn__ton">+</button>
+        <button class="btn__ton transpose-down">-</button><p>Тон</p><button class="btn__ton transpose-up">+</button>
         <button class="btn__scroll">-</button><p>Прокрутка</p><button class="btn__scroll">+</button>
         <button class="btn__fontsize">-</button><p>Шрифт</p><button class="btn__fontsize">+</button>
       </div>
@@ -218,65 +218,10 @@ G          B7 Em
     <p>&#169CoreChords (2022-2023)</p>
   </div>
 </footer>
+<script src="javascript/btnScrollTop.js"></script>
+<script src="javascript/spanToChords.js"></script>
+<script src="javascript/applicaturesAdding.js"></script>
+<script src="javascript/nav_search.js"></script>
+<!--<script src="javascript/transposeControl.js"></script>-->
 </body>
-<script>
-    //скролл наверх
-  const  btnScrollToTop = document.querySelector('#btnScrollToTop');
-  window.addEventListener('scroll', function (){
-    if(window.pageYOffset >100){
-      btnScrollToTop.classList.add('show');
-    }
-    else{
-      btnScrollToTop.classList.remove('show');
-    }
-  });
-  btnScrollToTop.addEventListener('click', function (){
-    window.scrollTo({
-      top:0,
-      behavior: 'smooth'
-    });
-  });
-
-  //Преобразование аккордов
-  const pre = document.querySelectorAll('pre');
-  const toSearch = ['Am','G','B7','Em','C','D']
-  const regex = new RegExp(toSearch.join("|"),"g");
-  pre.forEach((pre) => {
-      pre.innerHTML = pre.innerHTML.replace(regex, '<span>$&</span>');
-  });
-</script>
-<script>
-    const foundGroups = {};
-    pre.forEach((pre) =>{
-        pre.innerHTML = pre.innerHTML.replace(new RegExp(toSearch.join("|"),"g"), function (match) {
-            if(!foundGroups[match]){
-            const img = document.createElement('img');
-            // const chordsContainer=document.querySelector('.applicature_images');
-            // const guitarChords = new GuitarChords();
-            let src = '';
-            if(match === 'G'){
-                src = 'content/images/G_0.gif';
-            }
-            else if(match === 'B7'){
-                src = 'content/images/B7_0.gif';
-            }
-            else if(match === 'D'){
-                src = 'content/images/D_0.gif';
-            }
-            else if(match === 'C'){
-                src = 'content/images/C_0.gif';
-            }
-            else if(match === 'Em'){
-                src = 'content/images/Em_0.gif';
-            }
-
-            img.setAttribute('src',src);
-            document.querySelector('.applicature_images').appendChild(img);
-
-            foundGroups[match] = true;
-            }
-            return '<span>' + match + '</span>';
-        });
-    });
-</script>
 </html>

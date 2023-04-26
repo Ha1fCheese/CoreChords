@@ -1,0 +1,68 @@
+@import "constants";
+// БЛОК С НОВЫМИ ПОДБОРАМИ
+.new_chords__div{
+  padding: 10px 0 10px 0;
+  margin-bottom: 30px;
+  @media(max-width: 780px){
+    margin-bottom: 0;
+  }
+  width: 100%;
+  p{
+    font-family: "Calibri Light";
+    color: $fontColor;
+    display: inline-block;
+    margin: 10px 0 0 10vw;
+    @media (max-width: 780px){
+      margin: 10px 3px 10px 3px;
+    }
+    font-size: $fontSizeXL;
+  }
+  .new_chords__div__items{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    margin: 10px 10vw 10px 10vw;
+    @media (max-width: 780px){
+      margin: 0 3px 0 3px;
+    }
+    a {
+      //border-radius: 10px 10px 10px 10px;
+      flex-basis: calc(33% - 5vw);
+      @media(max-width: 1080px ){
+        flex-basis:calc(50% - 5vw );
+      }
+      @media(max-width: 780px){
+        flex-basis: 100%;
+      }
+      font-family: "Calibri Light";
+      color: $fontColor;
+      display: inline-block;
+      margin: 4px 0 5px 0;
+      padding: 4px 0 6px 5px;
+      width: 10vw;
+      border-left: solid 5px $borderColor;
+      border-right: solid 0px transparent;
+
+      //background-color: #32444d;
+      text-decoration: none;
+      //box-shadow: $shadowColor 0 3px 10px -1px;
+      font-size: $fontSizeL;
+      //text-align: center;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    a:hover, a:focus{
+      color: palegoldenrod;
+      //background-color: $bgDivColor;
+      background-color: #2b2b2c;
+
+      border-left: solid 1px palegoldenrod;
+      border-right: solid 4px transparent;
+
+      box-shadow: none;
+      transition: 0.2s;
+    }
+  }
+}

@@ -1,0 +1,49 @@
+@font-face {
+  font-family: "sitka1";
+  src: url("../content/fonts/sitka-small-599.ttf");
+}
+.new_chords__div {
+  padding: 10px 0 10px 0;
+  margin-bottom: 30px;
+  width: 100%;
+}
+.new_chords__div p {
+  font-family: "Calibri Light";
+  color: #fdfdfd;
+  display: inline-block;
+  margin: 10px 0 0 10vw;
+  font-size: 3.5vh;
+}
+.new_chords__div .new_chords__div__items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 10px 10vw 10px 10vw;
+}
+.new_chords__div .new_chords__div__items a {
+  flex-basis: calc(33% - 5vw);
+  font-family: "Calibri Light";
+  color: #fdfdfd;
+  display: inline-block;
+  margin: 4px 0 5px 0;
+  padding: 4px 0 6px 5px;
+  width: 10vw;
+  border-left: solid 5px #3a4f67;
+  border-right: solid 0px transparent;
+  text-decoration: none;
+  font-size: 2vh;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.new_chords__div .new_chords__div__items a:hover, .new_chords__div .new_chords__div__items a:focus {
+  color: palegoldenrod;
+  background-color: #2b2b2c;
+  border-left: solid 1px palegoldenrod;
+  border-right: solid 4px transparent;
+  box-shadow: none;
+  transition: 0.2s;
+}
+
+/*# sourceMappingURL=NewChordsDiv.css.map */

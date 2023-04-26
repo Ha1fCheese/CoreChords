@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="css/about_us.css" rel="stylesheet">
+  <link href="css/about_us.css" rel="stylesheet" type="text/css">
   <title>CoreChords - Главная</title>
 </head>
 <body>
@@ -97,7 +97,7 @@
         <br><br><br>
         2. На многих сайтах содержится большое количество неточных и неудобных подборов, по которыми довольно сложно пользоваться.<br>
         <br>Когда пожелав найти подбор на какую-либо песню, вы ищите ресурс с подбором, где удобно расставлены аккорды над текстом, но нередко бывает так, что либо аккорды не те, либо они расставлены не так, а то и вовсе не отформатированы. Данный проект будет стараться содержать в себе только качественно отформатированные аккорды.
-        *Здесь могла быть политика конфиденциальности*
+        <br><br>*Здесь могла быть политика конфиденциальности*
     </p>
   </div>
 </div>
@@ -107,22 +107,6 @@
   </div>
 </footer>
 </body>
-<script>
-  const  btnScrollToTop = document.querySelector('#btnScrollToTop');
-  window.addEventListener('scroll', function (){
-    if(window.pageYOffset >100){
-      btnScrollToTop.classList.add('show');
-    }
-    else{
-      btnScrollToTop.classList.remove('show');
-    }
-  });
-
-  btnScrollToTop.addEventListener('click', function (){
-    window.scrollTo({
-      top:0,
-      behavior: 'smooth'
-    });
-  });
-</script>
+<script src="javascript/btnScrollTop.js"></script>
+<script src="javascript/nav_search.js"></script>
 </html>
