@@ -1,0 +1,15 @@
+footer{
+  margin-top: 32px;
+  padding: 8px 0 8px 0;
+  background-color: #2a2a2a;
+  .footer__div{
+    text-align: center;
+    p{
+      padding: 0 0 0 0;
+      margin: 0 0 0 0 ;
+      color: $fontColor;
+      font-size: $fontSizeL;
+      font-family: "Sitka Banner";
+    }
+  }
+}
