@@ -3,6 +3,11 @@
   font-family: "sitka1";
   src: url("../content/fonts/sitka-small-599.ttf");
 }
+body {
+  position: relative;
+  z-index: -2;
+}
+
 .logo {
   width: 131.97px;
   height: 30.08px;
@@ -17,6 +22,10 @@ body {
 @font-face {
   font-family: "sitka1";
   src: url("../content/fonts/sitka-small-599.ttf");
+}
+body body {
+  position: relative;
+  z-index: -2;
 }
 body header nav {
   background-color: #0d243f;
@@ -38,7 +47,7 @@ body header nav .nav_main__div {
 }
 @media (max-width: 780px) {
   body header nav .nav_main__div {
-    margin: 0 3px 0 3px;
+    margin: 0 0 0 0;
   }
 }
 @media (max-width: 780px) {
@@ -83,23 +92,34 @@ body header nav .nav_main__div .menu__block ul li {
 body header nav .nav_main__div .menu__block ul li a {
   text-transform: uppercase;
   color: white;
+  top: 0;
+  border-bottom: 1px solid transparent;
   text-decoration: none;
   padding: 24px 16px 20px 16px;
 }
 @media (max-width: 780px) {
   body header nav .nav_main__div .menu__block ul li a {
-    background-color: #0d243f;
+    background-color: transparent;
   }
 }
-body header nav .nav_main__div .menu__block ul li:hover a {
-  color: palegoldenrod;
-  text-decoration: none;
-  background-color: #0a1c31;
-  transition: 0.3s ease-in-out;
-}
-@media (max-width: 780px) {
+@media (min-width: 781px) {
   body header nav .nav_main__div .menu__block ul li:hover a {
-    background-color: #0d243f;
+    text-decoration: none;
+    background-color: #00344f;
+    position: relative;
+    top: 10px;
+    padding-top: 34px;
+    color: #00ecff;
+    border-bottom: solid 1px #00ecff;
+    transition: 0.3s ease-in-out;
+  }
+}
+@media (min-width: 781px) {
+  body header nav .nav_main__div .menu__block ul li:not(:hover) a {
+    position: relative;
+    top: 0;
+    padding-top: 24px;
+    transition: 0.3s ease-in-out;
   }
 }
 body header nav .nav_main__div .menu__block ul .here {
@@ -158,20 +178,20 @@ body header nav .nav_main__div .menu__block ul .here {
     flex-direction: column;
     position: absolute;
     visibility: hidden;
-    top: 0;
-    width: 150px;
-    height: 98vh;
+    top: -300px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    height: 140px;
     margin: 0;
-    padding-top: 40px;
-    margin-left: -3px;
     list-style: none;
-    background-color: #0d243f;
+    background-color: rgba(0, 4, 33, 0.7);
     box-shadow: 0 8px 6px -6px rgb(0, 0, 0);
-    z-index: 2;
+    z-index: -1;
   }
   body header nav .nav_main__div .menu__block .menu__item {
     display: block;
-    padding: 12px 8px;
+    padding: 12px 24px;
     color: white;
     font-size: 20px;
     text-decoration: none;
@@ -205,6 +225,13 @@ body header nav .nav_main__div .menu__block ul .here {
   body header nav .nav_main__div .menu__block #menu__toggle:checked ~ .menu__box {
     visibility: visible;
     left: 0;
+    top: 46px;
+    transition: 0.3s ease-in-out;
+  }
+  body header nav .nav_main__div .menu__block #menu__toggle:not(:checked) ~ .menu__box {
+    visibility: hidden;
+    top: -300px;
+    transition: 0.3s ease-in-out;
   }
 }
 @media (max-width: 780px) {
@@ -224,16 +251,24 @@ body header nav .nav_main__div .input__div form {
   }
 }
 body header nav .nav_main__div .input__div form #searchResults {
-  display: block;
+  display: none;
   font-family: "Calibri Light";
   position: absolute;
-  top: 100%;
-  left: 0;
+  top: 110%;
+  left: -50px;
   z-index: 2;
   background-color: #2a2a2a;
   max-height: 50vh;
-  width: 100%;
+  width: 30vw;
   overflow: hidden;
+}
+@media (max-width: 780px) {
+  body header nav .nav_main__div .input__div form #searchResults {
+    top: 120%;
+    border: 1px solid palegoldenrod;
+    width: 70vw;
+    left: -50vw;
+  }
 }
 body header nav .nav_main__div .input__div form #searchResults a {
   display: block;
@@ -285,6 +320,10 @@ body header nav .nav_main__div .input__div form .label__search input:focus ~ .po
 @font-face {
   font-family: "sitka1";
   src: url("../content/fonts/sitka-small-599.ttf");
+}
+body body {
+  position: relative;
+  z-index: -2;
 }
 body .new_chords__div {
   padding: 10px 0 10px 0;
@@ -511,6 +550,10 @@ body footer .footer__div p {
 @font-face {
   font-family: "sitka1";
   src: url("../content/fonts/sitka-small-599.ttf");
+}
+body body {
+  position: relative;
+  z-index: -2;
 }
 body #btnScrollToTop {
   padding: 18px 24px;
