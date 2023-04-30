@@ -8,10 +8,11 @@ header{
     display: flex;
     position: relative;
     box-shadow: $shadowColor 0 4px 8px 0;
+    //z-index: 2;
     .nav_main__div {
       margin: 0 10vw 0 10vw;
       @media (max-width: 780px){
-        margin: 0 3px 0 3px;
+        margin: 0 0 0 0;
       }
       width: 100%;
       display: flex;
@@ -51,23 +52,42 @@ header{
             a {
               text-transform: uppercase;
               color: white;
+              top:0;
+              border-bottom: 1px solid transparent;
               text-decoration: none;
               padding: 24px 16px 20px 16px;
               @media(max-width: 780px){
-                background-color: #0d243f; //////////////
+                background-color: transparent; //////////////
               }
             }
           }
           li:hover {
             a {
-              color: palegoldenrod;
-              text-decoration: none;
-              background-color: #0a1c31;
-              @media (max-width: 780px) {
-                background-color: #0d243f;/////////////////////
-              }
+              @media (min-width: 781px){
+                //color: palegoldenrod;
+                text-decoration: none;
+                background-color: #00344f;
+                position: relative;
+                top:10px;
+                padding-top: 34px;
+                color: #00ecff;
+                border-bottom: solid 1px #00ecff;
+                //padding-bottom: 20px;
+              //top: 20px;
               //border-bottom: 1px solid palegoldenrod;
+                transition: 0.3s ease-in-out;
+              }
+            }
+          }
+          li:not(:hover){
+            a{
+            @media (min-width: 781px){
+              position: relative;
+              top: 0;
+              padding-top: 24px;
               transition: 0.3s ease-in-out;
+              //padding-top: 24px;
+            }
             }
           }
           .here{
@@ -128,25 +148,28 @@ header{
             flex-direction: column;
             position: absolute;
             visibility: hidden;
-            top: 0;
-            width: 150px;
-            height: 98vh;
+            top: -300px;
+            left: 0;
+            //left: -300px;
+            width: 100%;
+            text-align: center;
+            height: 140px;
             margin: 0;
             //padding: 20px 0;
-            padding-top: 40px;
+            //padding-top: 40px;
             //padding-left: 30px;
-            margin-left: -3px;
+            //margin-left: -3px;
             list-style: none;
             //text-align: center;
-            background-color: #0d243f;
+            background-color: rgba(0, 4, 33, 0.7);
             box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 1);
             //border: 1px solid $borderColor;
-            z-index: 2;
+            z-index: -1;
           }
           /* элементы меню */
           .menu__item {
             display: block;
-            padding: 12px 8px;
+            padding: 12px 24px;
             color: white;
             //font-family: 'Roboto', sans-serif;
             font-size: 20px;
@@ -183,6 +206,16 @@ header{
           #menu__toggle:checked ~ .menu__box {
             visibility: visible;
             left: 0;
+            top: 46px;
+            //z-index: -1;
+            transition: 0.3s ease-in-out;
+          }
+          #menu__toggle:not(:checked) ~ .menu__box {
+            visibility: hidden;
+            //left: -300px;
+            //z-index: -1;
+            top: -300px;
+            transition: 0.3s ease-in-out;
           }
         }
       }
@@ -199,19 +232,27 @@ header{
             order: 3;
           }
           #searchResults {
-              display: block;
+              display: none;
               font-family: "Calibri Light";
               position: absolute;
-              top: 100%;
-              left: 0;
+              top: 110%;
+              left: -50px;
               z-index: 2;
               background-color: #2a2a2a;
               max-height: 50vh;
-              width: 100%;
+              width: 30vw;
+              @media (max-width: 780px) {
+                top: 120%;
+                border: 1px solid palegoldenrod;
+                width: 70vw;
+                left: -50vw;
+              }
               overflow: hidden;
             }
 
             #searchResults a {
+              //border-top: 1px solid palegoldenrod;
+              //border-bottom: 1px solid palegoldenrod;
               display: block;
               padding: 5px;
               color: $fontColor;

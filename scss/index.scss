@@ -57,6 +57,7 @@ body{
         }
         input:hover, input:focus {
           background-color: rgba(0, 0, 0, 0.08);
+          border-color: palegoldenrod ;
           transition: 0.3s;
         }
         .popular_search:focus ~ .popular_search_placeholder, .popular_search:not(:invalid) ~ .popular_search_placeholder{
@@ -65,7 +66,7 @@ body{
           transition: 0.5s;
         }
         button{
-          padding: 8px 16px;
+          padding: 9px 18px;
           border-radius: 0 8px 8px 0;
           margin: 0 0 0 0;
           font-size: $fontSizeL;
@@ -75,7 +76,8 @@ body{
           scale: 1;
         }
         button:hover{
-          scale:1.05;
+          border: palegoldenrod 1px solid;
+          //scale:1.05;
           //transform: translateX(2px) ;
           //border-radius: 8px 8px 8px 8px;
           transition: 0.3s;

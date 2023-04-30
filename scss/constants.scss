@@ -12,3 +12,8 @@ $fontSizeM: 1.58vh;
 $fontSizeL: 2vh;
 $fontSizeXL: 3.5vh;
 $fontSizeXXL: 6vh;
+
+body{
+  position: relative;
+  z-index: -2;
+}
