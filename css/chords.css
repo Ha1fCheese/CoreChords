@@ -18,6 +18,7 @@ body {
   margin: 0 0 0 0;
   font-family: "Calibri Light";
   background-color: #1e1f22;
+  width: 100%;
 }
 @font-face {
   font-family: "sitka1";
@@ -463,6 +464,12 @@ body .perfomer__main__div .main_part_chords .chords {
 body .perfomer__main__div .main_part_chords .chords .control_buttons {
   color: #fdfdfd;
 }
+@media (max-width: 780px) {
+  body .perfomer__main__div .main_part_chords .chords .control_buttons {
+    display: flex;
+    flex-direction: column;
+  }
+}
 body .perfomer__main__div .main_part_chords .chords .control_buttons p {
   display: inline-block;
   margin: 0 8px 0 8px;
@@ -560,6 +567,97 @@ body #btnScrollToTop:hover {
   filter: invert(1);
   scale: 1.1;
   transition: 0.3s ease-in-out;
+}
+
+.control__side__menu__div {
+  display: none;
+}
+
+@media (max-width: 780px) {
+  .control__side__menu__div {
+    display: flex;
+    position: fixed;
+    float: left;
+    top: 50vh;
+    right: 0;
+  }
+  .control__side__menu__div .slider__button {
+    display: inline-block;
+  }
+  .control__side__menu__div .control_buttons {
+    color: #fdfdfd;
+  }
+}
+@media (max-width: 780px) and (max-width: 780px) {
+  .control__side__menu__div .control_buttons {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 780px) {
+  .control__side__menu__div .control_buttons p {
+    display: inline-block;
+    margin: 0 8px 0 8px;
+    font-size: 2vh;
+  }
+}
+@media (max-width: 780px) {
+  .control__side__menu__div .control_buttons button {
+    height: 28px;
+    width: 28px;
+    border-radius: 0.3vw 0.3vw 0.3vw 0.3vw;
+    outline: none;
+    border: none;
+    color: #fdfdfd;
+    font-size: 2vh;
+    box-shadow: rgba(0, 0, 0, 0.5) 0 4px 8px 0;
+  }
+}
+@media (max-width: 780px) {
+  .control__side__menu__div .control_buttons .btn__ton {
+    background-color: #9d2121;
+  }
+}
+@media (max-width: 780px) {
+  .control__side__menu__div .control_buttons .btn__ton:hover, .control__side__menu__div .control_buttons .btn__ton:focus {
+    background-color: #851c1c;
+    box-shadow: none;
+    border: solid 1px palegoldenrod;
+    transition: 0.2s ease-in-out;
+  }
+}
+@media (max-width: 780px) {
+  .control__side__menu__div .control_buttons .btn__scroll {
+    background-color: #239a37;
+  }
+}
+@media (max-width: 780px) {
+  .control__side__menu__div .control_buttons .btn__scroll:hover, .control__side__menu__div .control_buttons .btn__scroll:focus {
+    background-color: #1d7a2e;
+    box-shadow: none;
+    border: solid 1px palegoldenrod;
+    transition: 0.2s ease-in-out;
+  }
+}
+@media (max-width: 780px) {
+  .control__side__menu__div .control_buttons .btn__fontsize {
+    background-color: #23629a;
+  }
+}
+@media (max-width: 780px) {
+  .control__side__menu__div .control_buttons .btn__fontsize:hover, .control__side__menu__div .control_buttons .btn__fontsize:focus {
+    background-color: #1c4e7a;
+    box-shadow: none;
+    border: solid 1px palegoldenrod;
+    transition: 0.2s ease-in-out;
+  }
+}
+@media (max-width: 780px) {
+  .control__side__menu__div .control__buttons {
+    display: flex;
+    flex-direction: column;
+    background-color: #00ecff;
+  }
 }
 
 /*# sourceMappingURL=chords.css.map */

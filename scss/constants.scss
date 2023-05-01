@@ -17,3 +17,56 @@ body{
   position: relative;
   z-index: -2;
 }
+
+@mixin control__btns{
+  .control_buttons{
+    color:$fontColor;
+    @media(max-width: 780px){
+      display: flex;
+      flex-direction: column;
+    }
+    //margin-top: 40px;
+    p{
+      display: inline-block;
+      margin: 0 8px 0 8px;
+      font-size: $fontSizeL;
+    }
+    button{
+      height: 28px;
+      width: 28px;
+      border-radius: 0.3vw 0.3vw 0.3vw 0.3vw;
+      outline:none;
+      border:none;
+      color: $fontColor;
+      font-size: $fontSizeL;
+      box-shadow: $shadowColor 0 4px 8px 0;
+    }
+    .btn__ton{
+      background-color: #9d2121;
+    }
+    .btn__ton:hover, .btn__ton:focus{
+      background-color: #851c1c;
+      box-shadow: none;
+      border: solid 1px palegoldenrod;
+      transition: 0.2s ease-in-out;
+    }
+    .btn__scroll{
+      background-color: #239a37;
+    }
+    .btn__scroll:hover, .btn__scroll:focus{
+      background-color: #1d7a2e;
+      box-shadow: none;
+      border: solid 1px palegoldenrod;
+      transition: 0.2s ease-in-out;
+    }
+    .btn__fontsize{
+      background-color: #23629a;
+    }
+    .btn__fontsize:hover, .btn__fontsize:focus{
+      background-color: #1c4e7a;
+      box-shadow: none;
+      border: solid 1px palegoldenrod;
+      transition: 0.2s ease-in-out;
+    }
+  }
+}
