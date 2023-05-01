@@ -1,5 +1,76 @@
 @import "constants";
 
+//кнопки управления
+@mixin control__btns{
+  .control_buttons{
+    color:$fontColor;
+    @media(max-width: 780px){
+      display: flex;
+      flex-direction: column;
+      padding: 5px;
+      background-color: transparent;
+      div{
+        display: flex;
+        justify-content: space-between;
+      }
+      div:first-child{
+        margin-bottom: 5px;
+      }
+      div:nth-child(2){
+        margin: 5px 0;
+      }
+      div:last-child{
+        margin-top: 5px;
+      }
+    }
+    p{
+      display: inline-block;
+      margin: 0 8px 0 8px;
+      font-size: $fontSizeL;
+    }
+    button{
+      height: 28px;
+      width: 28px;
+      border-radius: 0.3vw 0.3vw 0.3vw 0.3vw;
+      outline:none;
+      border:none;
+      color: $fontColor;
+      font-size: $fontSizeL;
+      box-shadow: $shadowColor 0 4px 8px 0;
+      @media(max-width: 780px){
+        box-shadow: none;
+      }
+    }
+    .btn__ton{
+      background-color: #9d2121;
+    }
+    .btn__ton:hover, .btn__ton:focus{
+      background-color: #851c1c;
+      box-shadow: none;
+      border: solid 1px palegoldenrod;
+      transition: 0.2s ease-in-out;
+    }
+    .btn__scroll{
+      background-color: #239a37;
+    }
+    .btn__scroll:hover, .btn__scroll:focus{
+      background-color: #1d7a2e;
+      box-shadow: none;
+      border: solid 1px palegoldenrod;
+      transition: 0.2s ease-in-out;
+    }
+    .btn__fontsize{
+      background-color: #23629a;
+    }
+    .btn__fontsize:hover, .btn__fontsize:focus{
+      background-color: #1c4e7a;
+      box-shadow: none;
+      border: solid 1px palegoldenrod;
+      transition: 0.2s ease-in-out;
+    }
+  }
+}
+
 .logo{
   width: 131.97px;
   height: 30.08px;
@@ -16,8 +87,7 @@ body{
 
   //СТРАНИЦА ИСПОЛНИТЕЛЯ
   .perfomer__main__div{
-    margin-left: 10vw;
-    margin-right: 10vw;
+    margin: 0 10vw 0 10vw;
     @media (max-width: 780px){
       margin: 0 3px 0 3px;
     }
@@ -27,8 +97,13 @@ body{
       //justify-content: space-between;
       .perfomer__img__div{
         display: inline-block;
+
         img{
           box-shadow: $shadowColor 0 4px 8px -1px;
+          @media(max-width: 1080px){
+            width: 30vw;
+            height: 30vw;
+          }
         }
       }
       .perfomer_info {
@@ -38,11 +113,14 @@ body{
         justify-content: space-around;
         .perfomer__name__div {
           p,a {
-            text-decoration:none ;
+            //text-decoration:none ;
             color: $fontColor;
             font-family: "Calibri Light";
             font-size: $fontSizeXL;
             margin: 0 0 0 0;
+            @media (max-width: 780px) {
+              font-size:$fontSizeL ;
+            }
           }
           a:hover{
             color: palegoldenrod;
@@ -59,11 +137,21 @@ body{
     .main_part_chords{
       display: flex;
       margin-top: 40px;
+      @media(max-width: 1080px){
+        flex-direction: column;
+      }
       //justify-content: center;
       .applicature__div{
         display: flex;
         width: 15vw;
+        @media(max-width: 1080px){
+          width: 100%;
+        }
         flex-direction: column;
+
+        @media(max-width: 1080px){
+          order: 2;
+        }
         //justify-content: space-around;
         .applicature__header{
           p{
@@ -78,6 +166,10 @@ body{
             margin-bottom: 1vw;
             height: 5vw;
             width: 5vw;
+            @media(max-width: 1080px){
+              height: 20vw;
+              width: 20vw;
+            }
             filter: invert(0.88);
           }
         }
@@ -88,6 +180,11 @@ body{
         //margin:auto;
         flex-direction: column;
         @include control__btns;
+        @media (max-width: 780px) {
+          .control_buttons{
+            display: none;
+          }
+        }
         pre{
           font-size: $fontSizeL;
           color: $fontColor;
@@ -114,15 +211,63 @@ body{
     float: left;
     top:50vh;
     right: 0;
+    //background-color: black;
     .slider__button{
-      display: inline-block;
+      display: flex;
+      align-items: center;
+      input{
+        opacity: 0;
+      }
+      label{
+        display: inline-block;
+        position: relative;
+        //right: 50vh;
+        margin-right: 5vw;
+        //height: 100%;
+        //background: url("../content/images/plug2.png") no-repeat center center;
+        span{
+          display: block;
+          color: rgba(255, 255, 255, 0.5);
+          font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono", "Droid Sans Mono", monospace, monospace;
+          font-size: 15vw;
+          font-weight: 100;
+        }
+        img{
+
+        }
+      }
+      .div_btns_anim{
+        position: relative;
+        right: 0;
+      }
+      input:checked ~ .div_btns_anim, input:checked ~ label{
+        right: 0;
+        //background-color: #00ecff;
+        transition: 0.2s ease-in-out;
+        span{
+          rotate: 180deg;
+          transition: 0.2s ease-in-out;
+          //width: 50%;
+          //font-stretch: expanded;
+        }
+      }
+      input:not(:checked) ~ .div_btns_anim, input:not(:checked) ~ label{
+        right: -22vh;
+        @media(min-height:896px ){
+          right: -18.5vh;
+        }
+        @media(min-height: 1200px){
+          right: -16vh;
+        }
+        //background-color: #851c1c;
+        transition: 0.2s ease-in-out;
+        //display: none;
+        span{
+          rotate: 0deg;
+          transition: 0.2s ease-in-out;
+        }
+      }
     }
     @include control__btns;
-    .control__buttons{
-      display: flex;
-      flex-direction: column;
-      //color:black
-      background-color: #00ecff;
-    }
   }
 }

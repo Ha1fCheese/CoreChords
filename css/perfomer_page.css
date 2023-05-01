@@ -55,9 +55,6 @@ body header nav .nav_main__div {
     justify-content: space-around;
   }
 }
-body header nav .nav_main__div .logo_div {
-  padding: 0 7vw 8px 0;
-}
 @media (max-width: 780px) {
   body header nav .nav_main__div .logo_div {
     order: 1;
@@ -265,7 +262,7 @@ body header nav .nav_main__div .input__div form #searchResults {
 @media (max-width: 780px) {
   body header nav .nav_main__div .input__div form #searchResults {
     top: 120%;
-    border: 1px solid palegoldenrod;
+    font-size: 2.58vh;
     width: 70vw;
     left: -50vw;
   }
@@ -302,7 +299,7 @@ body header nav .nav_main__div .input__div form .label__search .popular_search_p
   font-family: "Calibri Light";
   color: rgba(255, 255, 255, 0.5);
 }
-@media (max-width: 780px) {
+@media (max-width: 1080px) {
   body header nav .nav_main__div .input__div form .label__search .popular_search_placeholder {
     font-size: 1.33vh;
     top: 5px;
@@ -395,14 +392,29 @@ body .new_chords__div .new_chords__div__items a:hover, body .new_chords__div .ne
 }
 body .perfomer__main__div .header {
   display: flex;
-  margin-left: 10vw;
-  margin-right: 10vw;
+  margin: 0 10vw 0 10vw;
+}
+@media (max-width: 780px) {
+  body .perfomer__main__div .header {
+    margin: 0 3px 0 3px;
+  }
 }
 body .perfomer__main__div .header .perfomer__img__div {
-  display: inline-block;
+  display: flex;
+}
+@media (max-width: 1080px) {
+  body .perfomer__main__div .header .perfomer__img__div {
+    justify-content: center;
+  }
 }
 body .perfomer__main__div .header .perfomer__img__div img {
   box-shadow: rgba(0, 0, 0, 0.5) 0 4px 8px -1px;
+}
+@media (max-width: 780px) {
+  body .perfomer__main__div .header .perfomer__img__div img {
+    width: 130px;
+    height: 130px;
+  }
 }
 body .perfomer__main__div .header .perfomer_info {
   margin-left: 2.5vw;
@@ -415,6 +427,11 @@ body .perfomer__main__div .header .perfomer_info .perfomer__name__div p {
   font-family: "Sitka Banner";
   font-size: 6vh;
   margin: 0 0 0 0;
+}
+@media (max-width: 780px) {
+  body .perfomer__main__div .header .perfomer_info .perfomer__name__div p {
+    font-size: 3.5vh;
+  }
 }
 body .perfomer__main__div .header .perfomer_info .stats {
   display: flex;

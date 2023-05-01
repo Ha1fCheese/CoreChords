@@ -55,9 +55,6 @@ body header nav .nav_main__div {
     justify-content: space-around;
   }
 }
-body header nav .nav_main__div .logo_div {
-  padding: 0 7vw 8px 0;
-}
 @media (max-width: 780px) {
   body header nav .nav_main__div .logo_div {
     order: 1;
@@ -265,7 +262,7 @@ body header nav .nav_main__div .input__div form #searchResults {
 @media (max-width: 780px) {
   body header nav .nav_main__div .input__div form #searchResults {
     top: 120%;
-    border: 1px solid palegoldenrod;
+    font-size: 2.58vh;
     width: 70vw;
     left: -50vw;
   }
@@ -302,7 +299,7 @@ body header nav .nav_main__div .input__div form .label__search .popular_search_p
   font-family: "Calibri Light";
   color: rgba(255, 255, 255, 0.5);
 }
-@media (max-width: 780px) {
+@media (max-width: 1080px) {
   body header nav .nav_main__div .input__div form .label__search .popular_search_placeholder {
     font-size: 1.33vh;
     top: 5px;

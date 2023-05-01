@@ -2,7 +2,7 @@
 <blocks>
     <block>
         <src>chords.html</src>
-        <href_img>../content/images/egor.png</href_img>
+        <href_img>../content/images/groups/egor.png</href_img>
         <song_name>Далеко бежит дорога (Впереди веселья много)</song_name>
         <group>Гражданская Оборона</group>
         <group_src>perfomer_page.html</group_src>

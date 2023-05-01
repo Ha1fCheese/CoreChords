@@ -18,13 +18,27 @@ body{
     .header{
       //width:100%;
       display: flex;
-      margin-left: 10vw;
-      margin-right: 10vw;
+      margin: 0 10vw 0 10vw;
+      @media (max-width: 780px){
+        margin: 0 3px 0 3px;
+        //flex-direction: column;
+        //justify-content: center;
+        //margin: auto;
+        //text-align: center;
+      }
       .perfomer__img__div{
-        display: inline-block;
+        display: flex;
+        @media (max-width: 1080px) {
+          justify-content: center;
+        }
         //margin-left: 10vw;
         img{
           box-shadow: $shadowColor 0 4px 8px -1px;
+          @media(max-width: 780px){
+            width: 130px;
+            height: 130px;
+            //margin: auto;
+          }
         }
       }
       .perfomer_info {
@@ -38,6 +52,9 @@ body{
             font-family: "Sitka Banner";
             font-size: $fontSizeXXL;
             margin: 0 0 0 0;
+            @media (max-width: 780px) {
+              font-size:$fontSizeXL ;
+            }
           }
         }
         .stats {

@@ -1,5 +1,5 @@
 let request = new XMLHttpRequest();
-request.open('GET', "../data/blocks.xml",false);
+request.open('GET', "data/blocks.xml",false);
 request.send();
 let xmldoc = request.responseXML;
 for(let i=0; i < xmldoc.getElementsByTagName('block').length; i++){
