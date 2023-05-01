@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const searchResults = [];
         const searchLinks = [];
         for (let i = 0; i < names.length; i++) {
-            if (names[i].textContent.includes(searchTerm)) {
+            if (names[i].textContent.toLowerCase().trim().includes(searchTerm)) {
                 searchResults.push(names[i]);
                 searchLinks.push(links[i]);
             }

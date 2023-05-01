@@ -8,17 +8,17 @@
         <group_src>perfomer_page.html</group_src>
     </block>
     <block>
-        <src>about_us.html</src>
-        <href_img>img</href_img>
-        <song_name>name</song_name>
-        <group>group</group>
-        <group_src>group_src</group_src>
+        <src>vesna.html</src>
+        <href_img>content/images/groups/kino.png</href_img>
+        <song_name>Весна</song_name>
+        <group>Кино</group>
+        <group_src>kino.html</group_src>
     </block>
     <block>
-        <src>performers.html</src>
-        <href_img>img</href_img>
-        <song_name>name2</song_name>
-        <group>group</group>
-        <group_src>group_src</group_src>
+        <src>dlya_yanki.html</src>
+        <href_img>content/images/groups/egor.png</href_img>
+        <song_name>Плюшевый мишутка (песенка для Янки)</song_name>
+        <group>Гражданская Оборона</group>
+        <group_src>perfomer_page.html</group_src>
     </block>
 </blocks>

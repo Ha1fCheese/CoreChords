@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="css/perfomer_page.css" rel="stylesheet" type="text/css">
-  <title>CoreChords - Гражданская Оборона</title>
+  <link href="css/chords.css" rel="stylesheet" type="text/css">
+  <title>CoreChords - Плюшевый мишутка (песенка для Янки)</title>
 </head>
 <body>
 <button id="btnScrollToTop">&nbsp</button>
@@ -107,35 +107,123 @@
     </div>
     <div class="perfomer_info">
       <div class="perfomer__name__div">
-        <p class="perfomer__name__title">Гражданская Оборона</p>
+        <a class="perfomer__name__title" href="perfomer_page.html">Гражданская Оборона</a>
+        <p class="perfomer__name__title">Плюшевый мишутка (песенка для Янки)</p>
       </div>
       <div class="stats">
-        <p><span>XX</span> Подборов</p>
+        <p><span>DD</span>.<span>MM</span>.<span>YYYY</span> Дата размещения</p>
         <p><span>XX</span> Посещений</p>
       </div>
     </div>
   </div>
-  <div class="perfomer__list__div">
-    <div class="popular__div">
-      <div class="popular__title">
-        <p>Список подборов</p>
+  <div class="main_part_chords">
+    <div class="applicature__div">
+      <div class="applicature__header">
+        <p>Аппликатуры аккордов</p>
       </div>
-      <div class="table__title">
-        <p>Песня</p>
-        <p>Количество посещений</p>
+      <div class="applicature_images">
       </div>
-      <hr />
+    </div>
+    <div class="chords">
+      <div class="control_buttons">
+        <button class="btn__ton transpose-down">-</button><p>Тон</p><button class="btn__ton transpose-up">+</button>
+        <button class="btn__scroll">-</button><p>Прокрутка</p><button class="btn__scroll">+</button>
+        <button class="btn__fontsize">-</button><p>Шрифт</p><button class="btn__fontsize">+</button>
+      </div>
+      <pre>           Bm
+Плюшевый мишутка
+ Em           A         D
+Шел по лесу, шишки собирал
+         G    B           Em
+Сразу терял все, что находил
+  F#           C
+Превращался в дулю
+              Em      Bm
+Чтобы кто-то там...вспомнил
+              G      Bm
+Чтобы кто-то там...глянул
+              Em    Bm F#
+Чтобы кто-то там понял
+
+            Bm
+Плюшевый мишутка
+ Em           A         D
+Шел войною прямо на Берлин
+         G    B           Em
+Смело ломал каждый мостик перед собой
+  F#           C
+Превращался в дуло
+
+         Em      Bm
+Чтобы поседел волос
+           G    Bm
+Чтобы почернел палец
+        Em    Bm F#
+Чтобы опалил дождик
+              Em      Bm
+Чтобы кто-то там тронул
+              G      Bm
+Чтобы кто-то там дунул
+              Em    Bm F#
+Чтобы кто-то там вздрогнул
+           Em    Bm
+Чтобы кто-то там... На стол накрыл
+                         G      Bm
+                 ...Машинку починил
+                        Em    Bm F#
+                 ...Платочком махнул
+                     Em      Bm
+                 ...Ветку нагнул...
+
+            Bm
+Плюшевый мишутка
+ Em           A         D
+Лез на небо прямо по сосне
+         G    B           Em
+Грозно рычал, прутиком грозил
+  F#           C
+Превращался в точку
+
+            Em      Bm
+Значит кто-то там знает
+              G      Bm
+Значит кто-то там верит
+            Em    Bm F#
+Значит кто-то там помнит
+             Em      Bm
+Значит кто-то там любит
+              G   Bm
+Значит кто-то там...</pre>
     </div>
   </div>
+</div>
+<div class="control__side__menu__div">
+  <div class="slider__button">
+    <input type="checkbox" id="toggle"/>
+    <label for="toggle">
+      <span><</span>
+      <!--            <img src="content/images/plug2.png"/>-->
+    </label>
+    <div class="div_btns_anim">
+      <div class="control_buttons">
+        <div><button class="btn__ton transpose-down">-</button><p>Тон</p><button class="btn__ton transpose-up">+</button></div>
+        <div><button class="btn__scroll">-</button><p>Прокрутка</p><button class="btn__scroll">+</button></div>
+        <div><button class="btn__fontsize">-</button><p>Шрифт</p><button class="btn__fontsize">+</button></div>
+      </div>
+    </div>
+  </div>
+
 </div>
 <footer>
   <div class="footer__div">
     <p>&#169CoreChords (2022-2023)</p>
   </div>
 </footer>
-</body>
 <script src="javascript/btnScrollTop.js"></script>
+<script src="javascript/spanToChords.js"></script>
+<script src="javascript/applicaturesAdding.js"></script>
 <script src="javascript/nav_search.js"></script>
 <script src="javascript/burger.js"></script>
-<script src="javascript/performerSongs.js"></script>
+<!--<script src="javascript/transposeControl.js"></script>-->
+</body>
 </html>
