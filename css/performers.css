@@ -182,8 +182,8 @@ body header nav .nav_main__div .menu__block ul .here {
     height: 140px;
     margin: 0;
     list-style: none;
-    background-color: rgba(0, 4, 33, 0.7);
-    box-shadow: 0 8px 6px -6px rgb(0, 0, 0);
+    background-color: #0b1f36;
+    box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.5);
     z-index: -1;
   }
   body header nav .nav_main__div .menu__block .menu__item {
@@ -433,8 +433,8 @@ body .to_find_main__div form input {
 body .to_find_main__div form .popular_search_placeholder {
   position: absolute;
   top: 8px;
-  left: 0;
-  font-size: 2vh;
+  left: 10px;
+  font-size: 2.2vh;
   padding-left: 0.5vw;
   font-family: "Calibri Light";
   color: rgba(255, 255, 255, 0.5);
@@ -449,7 +449,7 @@ body .to_find_main__div form .popular_search:focus ~ .popular_search_placeholder
   transition: 0.5s;
 }
 body .to_find_main__div form button {
-  padding: 8px 16px;
+  padding: 9px 18px;
   border-radius: 0 8px 8px 0;
   margin: 0 0 0 0;
   font-size: 2vh;
@@ -459,7 +459,7 @@ body .to_find_main__div form button {
   scale: 1;
 }
 body .to_find_main__div form button:hover {
-  scale: 1.05;
+  border: palegoldenrod 1px solid;
   transition: 0.3s;
 }
 body .to_find_main__div .popular__div {

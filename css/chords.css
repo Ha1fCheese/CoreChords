@@ -183,8 +183,8 @@ body header nav .nav_main__div .menu__block ul .here {
     height: 140px;
     margin: 0;
     list-style: none;
-    background-color: rgba(0, 4, 33, 0.7);
-    box-shadow: 0 8px 6px -6px rgb(0, 0, 0);
+    background-color: #0b1f36;
+    box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.5);
     z-index: -1;
   }
   body header nav .nav_main__div .menu__block .menu__item {
@@ -663,6 +663,7 @@ body #btnScrollToTop:hover {
   .control__side__menu__div .slider__button input:checked ~ .div_btns_anim span, .control__side__menu__div .slider__button input:checked ~ label span {
     rotate: 180deg;
     transition: 0.2s ease-in-out;
+    color: palegoldenrod;
   }
   .control__side__menu__div .slider__button input:not(:checked) ~ .div_btns_anim, .control__side__menu__div .slider__button input:not(:checked) ~ label {
     right: -22vh;

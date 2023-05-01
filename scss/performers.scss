@@ -53,8 +53,9 @@ body{
       .popular_search_placeholder {
         position: absolute;
         top: 8px;
-        left: 0;
-        font-size: $fontSizeL;
+        left: 10px;
+        font-size: calc($fontSizeL + 0.2vh);
+        //font-size: $fontSizeL;
         padding-left: 0.5vw;
         font-family: "Calibri Light";
         color: rgba(255, 255, 255, 0.5);
@@ -69,7 +70,7 @@ body{
         transition: 0.5s;
       }
       button{
-        padding: 8px 16px;
+        padding: 9px 18px;
         border-radius: 0 8px 8px 0;
         margin: 0 0 0 0;
         font-size: $fontSizeL;
@@ -79,7 +80,7 @@ body{
         scale: 1;
       }
       button:hover{
-        scale:1.05;
+        border: palegoldenrod 1px solid;
         transition: 0.3s;
       }
     }
