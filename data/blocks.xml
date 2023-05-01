@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<blocks>
+    <block>
+        <src>chords.html</src>
+        <href_img>../content/images/egor.png</href_img>
+        <song_name>Далеко бежит дорога (Впереди веселья много)</song_name>
+        <group>Гражданская Оборона</group>
+        <group_src>perfomer_page.html</group_src>
+    </block>
+    <block>
+        <src>about_us.html</src>
+        <href_img>img</href_img>
+        <song_name>name</song_name>
+        <group>group</group>
+        <group_src>group_src</group_src>
+    </block>
+    <block>
+        <src>performers.html</src>
+        <href_img>img</href_img>
+        <song_name>name2</song_name>
+        <group>group</group>
+        <group_src>group_src</group_src>
+    </block>
+</blocks>

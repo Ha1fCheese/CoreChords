@@ -499,7 +499,6 @@ body .to_find_main__div .popular__div .popular_all_elements .popular__base .popu
   border-radius: 16px 16px 16px 16px;
   flex-direction: column;
   margin-bottom: 0;
-  background: url("../content/images/plugBlue.png") no-repeat center center;
   background-size: cover;
   position: relative;
 }
@@ -548,8 +547,8 @@ body .to_find_main__div .popular__div .popular_all_elements .popular__base .popu
   color: palegoldenrod;
 }
 body .to_find_main__div .popular__div .popular_all_elements .popular__base .popular__element #el1 {
-  background: url("../content/images/egor.png") no-repeat center center;
-  background-size: cover;
+  /*background: url("../content/images/egor.png") no-repeat center center;
+  background-size: cover ;*/
 }
 body .to_find_main__div .popular__div .popular_all_elements .popular__base .popular__element:hover {
   transform: translateY(-16px);

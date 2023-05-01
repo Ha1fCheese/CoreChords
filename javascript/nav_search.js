@@ -2,43 +2,64 @@ document.addEventListener('DOMContentLoaded', function() {
     const searchInput = document.getElementById('searchInput');
     const resultsContainer = document.getElementById('searchResults');
 
-    // Загрузить страницу и добавить все теги <a> на страницу в список песен
-    function loadSongs() {
-        fetch('../data/songs.html')
-            .then(response => response.text())
-            .then(html => {
-                const parser = new DOMParser();
-                const doc = parser.parseFromString(html, 'text/html');
-                const songLinks = doc.querySelectorAll('a');
-                window.songList = Array.from(songLinks).map(link => {
-                    return {
-                        name: link.innerText.trim(),
-                        href: link.href
-                    };
-                });
-            })
-            .catch(error => console.error(error));
-    }
+    let request = new XMLHttpRequest();
+    request.open('GET', "../data/blocks.xml",false);
+    request.send();
+    let xmlDoc = request.responseXML;
 
-    loadSongs();
+    const names = xmlDoc.getElementsByTagName('song_name');
+    const links = xmlDoc.getElementsByTagName('src');
 
     // Обработчик ввода поискового запроса
     searchInput.addEventListener('input', () => {
         const searchTerm = searchInput.value.toLowerCase().trim();
-        const matchingSongs = window.songList.filter(song => {
+        while (resultsContainer.firstChild) {
+            resultsContainer.removeChild(resultsContainer.firstChild);
+        }
+
+        /*for (let i = 0; i < xmlDoc.getElementsByTagName('block').length; i++) {
+            let block = xmlDoc.getElementsByTagName('block')[i].childNodes;
+            let xmlSong = block[5].innerHTML;
+            console.log("try");
+            if (xmlSong.toLowerCase().trim().includes(searchTerm)) {
+                searchResults.push(links[i]);
+                console.log("try2");
+                resultsContainer.innerHTML = '';
+                const link = document.createElement('a');
+                link.href = block[1].innerHTML;
+                link.innerText = block[5].innerHTML;
+                resultsContainer.appendChild(link);
+                // resultsContainer.appendChild(document.createElement('br'));
+                console.log("complete");
+            }
+        }*/
+
+        const searchResults = [];
+        const searchLinks = [];
+        for (let i = 0; i < names.length; i++) {
+            if (names[i].textContent.includes(searchTerm)) {
+                searchResults.push(names[i]);
+                searchLinks.push(links[i]);
+            }
+        }
+        for (let i = 0; i < searchResults.length; i++) {
+            const linkElement = document.createElement('a');
+            // linkElement.id =
+            linkElement.textContent = searchResults[i].textContent;
+            linkElement.href = searchLinks[i].textContent;
+            resultsContainer.appendChild(linkElement);
+        }
+    });
+
+        /*const matchingSongs = window.xmlSong.filter(song => {
             return song.name.toLowerCase().includes(searchTerm);
-        });
+        });*/
 
         // Вывести результаты поиска в контейнер
-        resultsContainer.innerHTML = '';
-        matchingSongs.forEach(song => {
-            const link = document.createElement('a');
-            link.href = song.href;
-            link.innerText = song.name;
-            resultsContainer.appendChild(link);
+
             // resultsContainer.appendChild(document.createElement('br'));
-        });
-    });
+        /*});*/
+    // });
 
     // Закрыть результаты поиска при потере фокуса поля ввода
     searchInput.addEventListener("blur", (event) => {
@@ -46,6 +67,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (!resultsContainer.contains(event.relatedTarget)) {
             // очищаем результаты поиска
             resultsContainer.innerHTML = '';
+            // resultsContainer.event.relatedTarget.remove();
         }
     });
 

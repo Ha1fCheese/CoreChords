@@ -118,7 +118,7 @@ body{
             flex-direction: column;
             //flex-basis: 100%;
             margin-bottom: 0;
-            background: url("../content/images/plugBlue.png") no-repeat center center;
+            //background: url("../content/images/plugBlue.png") no-repeat center center;
             background-size: cover;
             position: relative;
             .bg{
@@ -132,6 +132,8 @@ body{
               }
               background-size: cover;
               position: relative;
+              //background: url("../content/images/egor.png") no-repeat center center;
+              //background-size: cover ;
             }
             .info__block{
               background-color: #363636;
@@ -161,8 +163,8 @@ body{
               }
             }
             #el1{
-              background: url("../content/images/egor.png") no-repeat center center;
-              background-size: cover ;
+              /*background: url("../content/images/egor.png") no-repeat center center;
+              background-size: cover ;*/
             }
           }
           .popular__element:hover {
