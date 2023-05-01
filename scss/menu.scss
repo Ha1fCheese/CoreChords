@@ -24,7 +24,7 @@ header{
       }
       flex-flow: wrap;
       .logo_div {
-        padding: 0 7vw 8px 0;
+        //padding: 0 7vw 8px 0;
         @media(max-width: 780px){
           order: 1;
           //margin:auto;
@@ -243,7 +243,8 @@ header{
               width: 30vw;
               @media (max-width: 780px) {
                 top: 120%;
-                border: 1px solid palegoldenrod;
+                font-size: calc($fontSizeM + 1vh);
+                //border: 1px solid palegoldenrod;
                 width: 70vw;
                 left: -50vw;
               }
@@ -284,7 +285,7 @@ header{
             .popular_search_placeholder {
               position: absolute;
               top: 0;
-              @media(max-width: 780px){
+              @media(max-width: 1080px){
                 font-size: calc($fontSizeM - 0.25vh);
                 top:5px;
                 //white-space: normal;
