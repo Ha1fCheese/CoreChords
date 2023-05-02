@@ -1,11 +1,11 @@
+let request = new XMLHttpRequest();
+request.open('GET', "data/blocks.xml",false);
+request.send();
+let xmlDoc = request.responseXML;
+
 document.addEventListener('DOMContentLoaded', function() {
     let popular__div = document.getElementsByClassName('popular__div')[0]
     // const resultsContainer = document.getElementById('searchResults');
-
-    let request = new XMLHttpRequest();
-    request.open('GET', "data/blocks.xml",false);
-    request.send();
-    let xmlDoc = request.responseXML;
 
     const groupName = xmlDoc.getElementsByTagName('group');
     const names = xmlDoc.getElementsByTagName('song_name');
