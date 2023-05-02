@@ -1,4 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE blocks [
+        <!ELEMENT blocks (block)*>
+        <!ELEMENT block (src|href_img|song_name|group|group_src)*>
+        <!ELEMENT src (#PCDATA)>
+        <!ELEMENT href_img (#PCDATA)>
+        <!ELEMENT song_name (#PCDATA)>
+        <!ELEMENT group (#PCDATA)>
+        <!ELEMENT group_src (#PCDATA)>
+        ]>
 <blocks>
     <block>
         <src>chords.html</src>

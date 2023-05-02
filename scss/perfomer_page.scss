@@ -34,6 +34,8 @@ body{
         //margin-left: 10vw;
         img{
           box-shadow: $shadowColor 0 4px 8px -1px;
+          width: 200px;
+          height: 200px;
           @media(max-width: 780px){
             width: 130px;
             height: 130px;
