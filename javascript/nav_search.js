@@ -1,7 +1,7 @@
-let request = new XMLHttpRequest();
-request.open('GET', "data/blocks.xml",false);
-request.send();
-let xmlDoc = request.responseXML;
+// let request = new XMLHttpRequest();
+// request.open('GET', "data/blocks.xml",false);
+// request.send();
+// let xmlDoc = request.responseXML;
 
 document.addEventListener('DOMContentLoaded', function() {
     const searchInput = document.getElementById('searchInput');
