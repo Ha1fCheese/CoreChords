@@ -20,6 +20,6 @@ const versionControl = document.getElementsByTagName('footer')[0];
 let div = document.createElement('div');
 div.className = 'footer__div'
 let v = document.createElement('p');
-v.innerHTML = 'XML test "alpha version 4"';
-div.appendChild(v)
+v.innerHTML = 'XML test "alpha version 3.1"';
+div.appendChild(v);
 versionControl.appendChild(div);
