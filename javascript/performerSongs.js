@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // const resultsContainer = document.getElementById('searchResults');
 
     let request = new XMLHttpRequest();
-    request.open('GET', "../data/blocks.xml",false);
+    request.open('GET', "data/blocks.xml",false);
     request.send();
     let xmlDoc = request.responseXML;
 
