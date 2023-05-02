@@ -6,6 +6,7 @@
     color:$fontColor;
     display: flex;
     flex-direction: row;
+    width: 100%;
     justify-content: space-around;
     @media(max-width: 1080px){
       @media (min-width: 781px) {
@@ -37,10 +38,15 @@
       display: inline-block;
       margin: 0 8px 0 8px;
       font-size: $fontSizeL;
+
     }
     button{
       height: 28px;
       width: 28px;
+      @media (min-width: 1900px) {
+        height: 3vh;
+        width: 3vh;
+      }
       border-radius: 0.3vw 0.3vw 0.3vw 0.3vw;
       outline:none;
       border:none;

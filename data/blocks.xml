@@ -30,4 +30,53 @@
         <group>Гражданская Оборона</group>
         <group_src>perfomer_page.html</group_src>
     </block>
+    <block>
+        <src>molodye_vetra.html</src>
+        <href_img>content/images/groups/7b.jpg</href_img>
+        <song_name>Молодые ветра</song_name>
+        <group>7Б</group>
+        <group_src>7b_page.html</group_src>
+    </block>
+    <block>
+        <src>gruppa_krovi.html</src>
+        <href_img>content/images/groups/kino.png</href_img>
+        <song_name>Группа крови</song_name>
+        <group>Кино</group>
+        <group_src>kino.html</group_src>
+    </block>
+    <block>
+        <src>kukla_kolduna.html</src>
+        <href_img>content/images/groups/kish.jpg</href_img>
+        <song_name>Кукла колдуна</song_name>
+        <group>Король и Шут</group>
+        <group_src>korol_i_shut.html</group_src>
+    </block>
+    <block>
+        <src>o_lubvi.html</src>
+        <href_img>content/images/groups/chizh_i_ko.jpg</href_img>
+        <song_name>О любви</song_name>
+        <group>Чиж и ко</group>
+        <group_src>chizh_i_ko.html</group_src>
+    </block>
+    <block>
+        <src>skovannye_odnoy_cepiy.html</src>
+        <href_img>content/images/groups/nau.jpg</href_img>
+        <song_name>Скованные одной цепью</song_name>
+        <group>Наутилус Помпилиус</group>
+        <group_src>nautilus_pompilius.html</group_src>
+    </block>
+    <block>
+        <src>amsterdam.html</src>
+        <href_img>content/images/groups/krematoriy.jpg</href_img>
+        <song_name>Амстердам</song_name>
+        <group>Крематорий</group>
+        <group_src>krematoriy.html</group_src>
+    </block>
+    <block>
+        <src>kapital.html</src>
+        <href_img>content/images/groups/lyapis.jpg</href_img>
+        <song_name>Капитал</song_name>
+        <group>Ляпис Трубецкой</group>
+        <group_src>lyapis_trubezkoi.html</group_src>
+    </block>
 </blocks>

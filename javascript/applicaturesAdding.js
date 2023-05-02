@@ -89,6 +89,9 @@ pre.forEach((pre) =>{
             else if(match === 'G'){
                 src = 'content/images/chords/G.png';
             }
+            else if(match === 'Gm'){
+                src = 'content/images/chords/Gm.png';
+            }
             else if(match === 'G#'){
                 src = 'content/images/chords/Gdiez.png';
             }

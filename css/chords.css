@@ -493,6 +493,7 @@ body .perfomer__main__div .main_part_chords .chords .control_buttons {
   color: #fdfdfd;
   display: flex;
   flex-direction: row;
+  width: 100%;
   justify-content: space-around;
 }
 @media (max-width: 1080px) and (min-width: 781px) {
@@ -535,6 +536,12 @@ body .perfomer__main__div .main_part_chords .chords .control_buttons button {
   color: #fdfdfd;
   font-size: 2vh;
   box-shadow: rgba(0, 0, 0, 0.5) 0 4px 8px 0;
+}
+@media (min-width: 1900px) {
+  body .perfomer__main__div .main_part_chords .chords .control_buttons button {
+    height: 3vh;
+    width: 3vh;
+  }
 }
 @media (max-width: 780px) {
   body .perfomer__main__div .main_part_chords .chords .control_buttons button {
@@ -711,6 +718,7 @@ body #btnScrollToTop:not(:hover) {
     color: #fdfdfd;
     display: flex;
     flex-direction: row;
+    width: 100%;
     justify-content: space-around;
   }
 }
@@ -757,6 +765,12 @@ body #btnScrollToTop:not(:hover) {
     color: #fdfdfd;
     font-size: 2vh;
     box-shadow: rgba(0, 0, 0, 0.5) 0 4px 8px 0;
+  }
+}
+@media (max-width: 780px) and (min-width: 1900px) {
+  .control__side__menu__div .control_buttons button {
+    height: 3vh;
+    width: 3vh;
   }
 }
 @media (max-width: 780px) and (max-width: 780px) {

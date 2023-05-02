@@ -4,6 +4,22 @@ document.addEventListener('DOMContentLoaded', function() {
     request.open('GET', "data/blocks.xml", false);
     request.send();
     let xmlDoc = request.responseXML;
+
+    //новые аккорды
+    const new_chords__div__items = document.getElementsByClassName('new_chords__div__items')[0];
+    console.log('not for;');
+    let k = (xmlDoc.getElementsByTagName('block').length - 10);
+    for (let i = xmlDoc.getElementsByTagName('block').length -1; i > k; i--){
+        console.log('for;');
+
+        let block = xmlDoc.getElementsByTagName('block')[i].childNodes;
+
+        let song_name2 = document.createElement('a');
+        song_name2.href = block[1].innerHTML;
+        song_name2.innerHTML = block[7].innerHTML + ' - ' + block[5].innerHTML;
+        new_chords__div__items.appendChild(song_name2);
+    }
+
     for (let i = 0; i < xmlDoc.getElementsByTagName('block').length; i++) {
         let block = xmlDoc.getElementsByTagName('block')[i].childNodes;
         let popular__base = document.createElement('div');
@@ -35,4 +51,5 @@ document.addEventListener('DOMContentLoaded', function() {
 
         document.body.getElementsByClassName("popular_all_elements")[0].appendChild(popular__base);
     }
+
 });
