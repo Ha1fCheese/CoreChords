@@ -256,7 +256,7 @@ body header nav .nav_main__div .input__div form #searchResults {
   z-index: 2;
   background-color: #2a2a2a;
   max-height: 50vh;
-  width: 30vw;
+  width: 20vw;
   overflow: hidden;
 }
 @media (max-width: 780px) {
@@ -542,6 +542,9 @@ body .to_find_main__div .popular__div .popular_all_elements .popular__base .popu
 }
 body .to_find_main__div .popular__div .popular_all_elements .popular__base .popular__element .info__block a:hover {
   color: palegoldenrod;
+}
+body .to_find_main__div .popular__div .popular_all_elements .popular__base .popular__element .info__block a:nth-child(2) {
+  font-style: italic;
 }
 body .to_find_main__div .popular__div .popular_all_elements .popular__base .popular__element #el1 {
   /*background: url("../content/images/egor.png") no-repeat center center;

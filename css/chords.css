@@ -257,7 +257,7 @@ body header nav .nav_main__div .input__div form #searchResults {
   z-index: 2;
   background-color: #2a2a2a;
   max-height: 50vh;
-  width: 30vw;
+  width: 20vw;
   overflow: hidden;
 }
 @media (max-width: 780px) {
@@ -474,14 +474,13 @@ body .perfomer__main__div .main_part_chords .applicature__div .applicature_image
 body .perfomer__main__div .main_part_chords .applicature__div .applicature_images img {
   margin-right: 1vw;
   margin-bottom: 1vw;
-  height: 5vw;
-  width: 5vw;
-  filter: invert(0.88);
+  height: 6vw;
+  width: 6vw;
 }
 @media (max-width: 1080px) {
   body .perfomer__main__div .main_part_chords .applicature__div .applicature_images img {
-    height: 20vw;
-    width: 20vw;
+    height: 100px;
+    width: 100px;
   }
 }
 body .perfomer__main__div .main_part_chords .chords {
@@ -490,13 +489,21 @@ body .perfomer__main__div .main_part_chords .chords {
 }
 body .perfomer__main__div .main_part_chords .chords .control_buttons {
   color: #fdfdfd;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+@media (max-width: 1080px) and (min-width: 781px) {
+  body .perfomer__main__div .main_part_chords .chords .control_buttons {
+    width: 70%;
+  }
 }
 @media (max-width: 780px) {
   body .perfomer__main__div .main_part_chords .chords .control_buttons {
     display: flex;
     flex-direction: column;
     padding: 5px;
-    background-color: transparent;
+    background-color: rgba(52, 86, 136, 0.5);
   }
   body .perfomer__main__div .main_part_chords .chords .control_buttons div {
     display: flex;
@@ -565,8 +572,13 @@ body .perfomer__main__div .main_part_chords .chords .control_buttons .btn__fonts
   }
 }
 body .perfomer__main__div .main_part_chords .chords pre {
-  font-size: 2vh;
+  font-size: 20px;
   color: #fdfdfd;
+}
+@media (max-width: 1080px) {
+  body .perfomer__main__div .main_part_chords .chords pre {
+    font-size: 15px;
+  }
 }
 body .perfomer__main__div .main_part_chords .chords pre span {
   background-color: #3b3b3b;
@@ -689,6 +701,14 @@ body #btnScrollToTop:hover {
 @media (max-width: 780px) {
   .control__side__menu__div .control_buttons {
     color: #fdfdfd;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+@media (max-width: 780px) and (max-width: 1080px) and (min-width: 781px) {
+  .control__side__menu__div .control_buttons {
+    width: 70%;
   }
 }
 @media (max-width: 780px) and (max-width: 780px) {
@@ -696,7 +716,7 @@ body #btnScrollToTop:hover {
     display: flex;
     flex-direction: column;
     padding: 5px;
-    background-color: transparent;
+    background-color: rgba(52, 86, 136, 0.5);
   }
   .control__side__menu__div .control_buttons div {
     display: flex;

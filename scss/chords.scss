@@ -4,11 +4,21 @@
 @mixin control__btns{
   .control_buttons{
     color:$fontColor;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    @media(max-width: 1080px){
+      @media (min-width: 781px) {
+        width: 70%;
+        //justify-content: center;
+      }
+    }
     @media(max-width: 780px){
+      //width: 100%;
       display: flex;
       flex-direction: column;
       padding: 5px;
-      background-color: transparent;
+      background-color: rgba(52, 86, 136, 0.5);
       div{
         display: flex;
         justify-content: space-between;
@@ -164,13 +174,13 @@ body{
           img{
             margin-right: 1vw;
             margin-bottom: 1vw;
-            height: 5vw;
-            width: 5vw;
+            height: 6vw;
+            width: 6vw;
             @media(max-width: 1080px){
-              height: 20vw;
-              width: 20vw;
+              height: 100px;
+              width: 100px;
             }
-            filter: invert(0.88);
+            //filter: invert(0.88);
           }
         }
       }
@@ -186,8 +196,12 @@ body{
           }
         }
         pre{
-          font-size: $fontSizeL;
+          font-size: 20px;
+          @media (max-width: 1080px) {
+            font-size: 15px;
+          }
           color: $fontColor;
+          //text-decoration: underline;
           span{
             background-color: #3b3b3b;
             padding: 0 2px 0 2px;

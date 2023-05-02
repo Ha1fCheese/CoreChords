@@ -256,7 +256,7 @@ body header nav .nav_main__div .input__div form #searchResults {
   z-index: 2;
   background-color: #2a2a2a;
   max-height: 50vh;
-  width: 30vw;
+  width: 20vw;
   overflow: hidden;
 }
 @media (max-width: 780px) {

@@ -89,15 +89,7 @@
 <div class="new_chords__div">
   <p>Новые подборы аккордов</p>
   <div class="new_chords__div__items">
-    <a href="chords.html">Гражданская оборона - Далеко бежит дорога (Впереди веселья много)</a>
-    <a href="#">Пример названия</a>
-    <a href="#">Пример названия</a>
-    <a href="#">Пример названия</a>
-    <a href="#">Пример названия</a>
-    <a href="#">Пример названия</a>
-    <a href="#">Пример названия</a>
-    <a href="#">Пример названия</a>
-    <a href="#">Пример названия</a>
+
   </div>
 </div>
 <div class="perfomer__main__div">
@@ -126,9 +118,9 @@
     </div>
     <div class="chords">
       <div class="control_buttons">
-        <button class="btn__ton transpose-down">-</button><p>Тон</p><button class="btn__ton transpose-up">+</button>
-        <button class="btn__scroll">-</button><p>Прокрутка</p><button class="btn__scroll">+</button>
-        <button class="btn__fontsize">-</button><p>Шрифт</p><button class="btn__fontsize">+</button>
+        <div><button class="btn__ton transpose-down">-</button><p>Тон</p><button class="btn__ton transpose-up">+</button></div>
+        <div><button class="btn__scroll" id="slow-down" >-</button><p id="stop">Прокрутка</p><button class="btn__scroll" id="speed-up">+</button></div>
+        <div><button class="btn__fontsize" onclick="decreaseFontSize()">-</button><p>Шрифт</p><button class="btn__fontsize" onclick="increaseFontSize()">+</button></div>
       </div>
       <pre>           Bm
 Плюшевый мишутка
@@ -207,8 +199,8 @@
     <div class="div_btns_anim">
       <div class="control_buttons">
         <div><button class="btn__ton transpose-down">-</button><p>Тон</p><button class="btn__ton transpose-up">+</button></div>
-        <div><button class="btn__scroll">-</button><p>Прокрутка</p><button class="btn__scroll">+</button></div>
-        <div><button class="btn__fontsize">-</button><p>Шрифт</p><button class="btn__fontsize">+</button></div>
+        <div><button class="btn__scroll" id="slow-down2" >-</button><p id="stop2">Прокрутка</p><button class="btn__scroll" id="speed-up2">+</button></div>
+        <div><button class="btn__fontsize" onclick="decreaseFontSize()">-</button><p>Шрифт</p><button class="btn__fontsize" onclick="increaseFontSize()">+</button></div>
       </div>
     </div>
   </div>
@@ -224,6 +216,9 @@
 <script src="javascript/applicaturesAdding.js"></script>
 <script src="javascript/nav_search.js"></script>
 <script src="javascript/burger.js"></script>
+<script src="javascript/btnscroll.js"></script>
+<script src="javascript/btnfontsize.js"></script>
+<!--<script src="javascript/btnScrollBurg.js"></script>-->
 <!--<script src="javascript/transposeControl.js"></script>-->
 </body>
 </html>
