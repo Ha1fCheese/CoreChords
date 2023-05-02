@@ -1,7 +1,7 @@
-let request = new XMLHttpRequest();
+/*let request = new XMLHttpRequest();
 request.open('GET', "data/blocks.xml",false);
 request.send();
-let xmlDoc = request.responseXML;
+let xmlDoc = request.responseXML;*/
 
 document.addEventListener('DOMContentLoaded', function() {
     let popular__div = document.getElementsByClassName('popular__div')[0]

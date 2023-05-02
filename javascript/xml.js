@@ -1,9 +1,9 @@
 let request = new XMLHttpRequest();
 request.open('GET', "data/blocks.xml",false);
 request.send();
-let xmldoc = request.responseXML;
-for(let i=0; i < xmldoc.getElementsByTagName('block').length; i++){
-    let block = xmldoc.getElementsByTagName('block')[i].childNodes;
+let xmlDoc = request.responseXML;
+for(let i=0; i < xmlDoc.getElementsByTagName('block').length; i++){
+    let block = xmlDoc.getElementsByTagName('block')[i].childNodes;
     let popular__base = document.createElement('div');
     popular__base.className = "popular__base";
     let popular__element = document.createElement('div');
