@@ -161,6 +161,9 @@ body{
               a:hover{
                 color: palegoldenrod;
               }
+              a:nth-child(2){
+                font-style: italic;
+              }
             }
             #el1{
               /*background: url("../content/images/egor.png") no-repeat center center;
