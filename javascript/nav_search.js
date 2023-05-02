@@ -1,11 +1,11 @@
+let request = new XMLHttpRequest();
+request.open('GET', "data/blocks.xml",false);
+request.send();
+let xmlDoc = request.responseXML;
+
 document.addEventListener('DOMContentLoaded', function() {
     const searchInput = document.getElementById('searchInput');
     const resultsContainer = document.getElementById('searchResults');
-
-    let request = new XMLHttpRequest();
-    request.open('GET', "data/blocks.xml",false);
-    request.send();
-    let xmlDoc = request.responseXML;
 
     const names = xmlDoc.getElementsByTagName('song_name');
     const links = xmlDoc.getElementsByTagName('src');
