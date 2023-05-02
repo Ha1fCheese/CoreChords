@@ -24,3 +24,9 @@
   scale: 1.1;
   transition: 0.3s ease-in-out;
 }
+#btnScrollToTop:not(:hover){
+  box-shadow: $shadowColor 0 0 10px 4px;
+  filter: none;
+  scale: 1;
+  transition: 0.3s ease-in-out;
+}
