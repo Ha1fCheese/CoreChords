@@ -409,6 +409,8 @@ body .perfomer__main__div .header .perfomer__img__div {
 }
 body .perfomer__main__div .header .perfomer__img__div img {
   box-shadow: rgba(0, 0, 0, 0.5) 0 4px 8px -1px;
+  width: 200px;
+  height: 200px;
 }
 @media (max-width: 780px) {
   body .perfomer__main__div .header .perfomer__img__div img {

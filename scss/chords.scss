@@ -110,9 +110,11 @@ body{
 
         img{
           box-shadow: $shadowColor 0 4px 8px -1px;
+          width: 200px;
+          height: 200px;
           @media(max-width: 1080px){
-            width: 30vw;
-            height: 30vw;
+            width: 130px;
+            height: 130px;
           }
         }
       }
