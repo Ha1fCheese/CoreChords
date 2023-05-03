@@ -20,19 +20,21 @@ logo.addEventListener('click',() =>{
 
 let head = document.getElementsByTagName('head')[0];
 let link = document.createElement('link');
-link.rel = 'shortcut icon';
+link.rel = 'shortcut-icon';
 link.href = 'content/svg/favicon.svg';
-link.type = 'img/svg';
+link.type = 'image/svg';
+head.appendChild(link);
 let link2 = document.createElement('link');
 link2.rel = 'icon';
 link2.href = 'content/svg/favicon.svg';
-link2.type = 'img/svg';
+link2.type = 'image/svg';
+head.appendChild(link2);
 
 //да, тут контроль версии
 const versionControl = document.getElementsByTagName('footer')[0];
 let div = document.createElement('div');
 div.className = 'footer__div'
 let v = document.createElement('p');
-v.innerHTML = 'Content release 1.3';
+v.innerHTML = 'Content release 1.3.1';
 div.appendChild(v);
 versionControl.appendChild(div);
