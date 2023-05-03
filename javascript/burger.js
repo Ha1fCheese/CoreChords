@@ -20,7 +20,7 @@ logo.addEventListener('click',() =>{
 
 let head = document.getElementsByTagName('head')[0];
 let link = document.createElement('link');
-link.rel = 'shortcut icon';
+link.rel = 'shortcut-icon';
 link.href = 'content/svg/favicon.svg';
 link.type = 'img/svg';
 let link2 = document.createElement('link');
