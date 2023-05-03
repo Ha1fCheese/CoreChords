@@ -22,6 +22,6 @@ const versionControl = document.getElementsByTagName('footer')[0];
 let div = document.createElement('div');
 div.className = 'footer__div'
 let v = document.createElement('p');
-v.innerHTML = 'Content release 1.1 (+font)';
+v.innerHTML = 'Content release 1.2 (+font)';
 div.appendChild(v);
 versionControl.appendChild(div);
