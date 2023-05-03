@@ -11,17 +11,17 @@ let scrollSpeed = 0;
 // обработчик клика по кнопке "Ускорить"
 speedUpButton.addEventListener('click', () => {
     // увеличиваем скорость прокрутки
-    scrollSpeed += 0.1;
+    scrollSpeed += 0.4;
 });
 speedUpButton2.addEventListener('click', () => {
     // увеличиваем скорость прокрутки
-    scrollSpeed += 0.1;
+    scrollSpeed += 0.4;
 });
 
 // обработчик клика по кнопке "Замедлить"
 slowDownButton.addEventListener('click', () => {
     // уменьшаем скорость прокрутки
-    scrollSpeed -= 0.1;
+    scrollSpeed -= 0.4;
 
     // если скорость меньше или равна 0, останавливаем прокрутку
     if (scrollSpeed <= 0) {
@@ -30,7 +30,7 @@ slowDownButton.addEventListener('click', () => {
 });
 slowDownButton2.addEventListener('click', () => {
     // уменьшаем скорость прокрутки
-    scrollSpeed -= 0.1;
+    scrollSpeed -= 0.4;
 
     // если скорость меньше или равна 0, останавливаем прокрутку
     if (scrollSpeed <= 0) {
