@@ -11,17 +11,28 @@ checkbox.addEventListener("change", function() {
     }
 });
 
+//ссылка на лого
 let logo = document.getElementsByClassName('logo_div')[0];
 logo.style = logo.style + ";cursor: pointer;";
 logo.addEventListener('click',() =>{
    window.location = 'index.html';
 });
 
+let head = document.getElementsByTagName('head')[0];
+let link = document.createElement('link');
+link.rel = 'shortcut icon';
+link.href = 'content/svg/favicon.svg';
+link.type = 'img/svg';
+let link2 = document.createElement('link');
+link2.rel = 'icon';
+link2.href = 'content/svg/favicon.svg';
+link2.type = 'img/svg';
+
 //да, тут контроль версии
 const versionControl = document.getElementsByTagName('footer')[0];
 let div = document.createElement('div');
 div.className = 'footer__div'
 let v = document.createElement('p');
-v.innerHTML = 'Content release 1.2 (+font)';
+v.innerHTML = 'Content release 1.3';
 div.appendChild(v);
 versionControl.appendChild(div);
