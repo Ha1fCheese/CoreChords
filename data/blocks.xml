@@ -31,6 +31,20 @@
         <group_src>perfomer_page.html</group_src>
     </block>
     <block>
+        <src>pohmelniy_regtaim.html</src>
+        <href_img>content/images/groups/krematoriy.jpg</href_img>
+        <song_name>Похмельный рэгтайм</song_name>
+        <group>Крематорий</group>
+        <group_src>krematoriy.html</group_src>
+    </block>
+    <block>
+        <src>otryad_ne_zametil_poteri_boyca.html</src>
+        <href_img>content/images/groups/egor.png</href_img>
+        <song_name>Отряд не заметил потери бойца</song_name>
+        <group>Гражданская Оборона</group>
+        <group_src>perfomer_page.html</group_src>
+    </block>
+    <block>
         <src>molodye_vetra.html</src>
         <href_img>content/images/groups/7b.jpg</href_img>
         <song_name>Молодые ветра</song_name>
@@ -45,6 +59,13 @@
         <group_src>kino.html</group_src>
     </block>
     <block>
+        <src>pesnya_bez_slov.html</src>
+        <href_img>content/images/groups/kino.png</href_img>
+        <song_name>Песня без слов</song_name>
+        <group>Кино</group>
+        <group_src>kino.html</group_src>
+    </block>
+    <block>
         <src>kukla_kolduna.html</src>
         <href_img>content/images/groups/kish.jpg</href_img>
         <song_name>Кукла колдуна</song_name>
@@ -52,11 +73,25 @@
         <group_src>korol_i_shut.html</group_src>
     </block>
     <block>
+        <src>musorniy_veter.html</src>
+        <href_img>content/images/groups/krematoriy.jpg</href_img>
+        <song_name>Мусорный ветер</song_name>
+        <group>Крематорий</group>
+        <group_src>krematoriy.html</group_src>
+    </block>
+    <block>
         <src>o_lubvi.html</src>
         <href_img>content/images/groups/chizh_i_ko.jpg</href_img>
         <song_name>О любви</song_name>
         <group>Чиж и ко</group>
         <group_src>chizh_i_ko.html</group_src>
+    </block>
+    <block>
+        <src>na_kuhne.html</src>
+        <href_img>content/images/groups/kino.png</href_img>
+        <song_name>На кухне</song_name>
+        <group>Кино</group>
+        <group_src>kino.html</group_src>
     </block>
     <block>
         <src>skovannye_odnoy_cepiy.html</src>
@@ -73,10 +108,262 @@
         <group_src>krematoriy.html</group_src>
     </block>
     <block>
+        <src>vechnaya_vesna.html</src>
+        <href_img>content/images/groups/egor.png</href_img>
+        <song_name>Вечная весна</song_name>
+        <group>Гражданская Оборона</group>
+        <group_src>perfomer_page.html</group_src>
+    </block>
+    <block>
+        <src>muraveinik.html</src>
+        <href_img>content/images/groups/kino.png</href_img>
+        <song_name>Муравейник</song_name>
+        <group>Кино</group>
+        <group_src>kino.html</group_src>
+    </block>
+    <block>
+        <src>progulki_po_vode.html</src>
+        <href_img>content/images/groups/nau.jpg</href_img>
+        <song_name>Прогулки по воде</song_name>
+        <group>Наутилус Помпилиус</group>
+        <group_src>nautilus_pompilius.html</group_src>
+    </block>
+    <block>
+        <src>psichonavti.html</src>
+        <href_img>content/images/groups/egor.png</href_img>
+        <song_name>Слава психонавтам!</song_name>
+        <group>Гражданская Оборона</group>
+        <group_src>perfomer_page.html</group_src>
+    </block>
+    <block>
+        <src>vedma_i_osel.html</src>
+        <href_img>content/images/groups/kish.jpg</href_img>
+        <song_name>Ведьма и осёл</song_name>
+        <group>Король и Шут</group>
+        <group_src>korol_i_shut.html</group_src>
+    </block>
+    <block>
+        <src>eli_myaso_muzhiki.html</src>
+        <href_img>content/images/groups/kish.jpg</href_img>
+        <song_name>Ели мясо мужики</song_name>
+        <group>Король и Шут</group>
+        <group_src>korol_i_shut.html</group_src>
+    </block>
+    <block>
+        <src>kamnem_po_golove.html</src>
+        <href_img>content/images/groups/kish.jpg</href_img>
+        <song_name>Камнем по голове</song_name>
+        <group>Король и Шут</group>
+        <group_src>korol_i_shut.html</group_src>
+    </block>
+    <block>
+        <src>kamchatka.html</src>
+        <href_img>content/images/groups/kino.png</href_img>
+        <song_name>Камчатка</song_name>
+        <group>Кино</group>
+        <group_src>kino.html</group_src>
+    </block>
+    <block>
+        <src>ispoved_vampira.html</src>
+        <href_img>content/images/groups/kish.jpg</href_img>
+        <song_name>Исповедь вампира</song_name>
+        <group>Король и Шут</group>
+        <group_src>korol_i_shut.html</group_src>
+    </block>
+    <block>
+        <src>v_nashih_glazah.html</src>
+        <href_img>content/images/groups/kino.png</href_img>
+        <song_name>В наших глазах</song_name>
+        <group>Кино</group>
+        <group_src>kino.html</group_src>
+    </block>
+    <block>
         <src>kapital.html</src>
         <href_img>content/images/groups/lyapis.jpg</href_img>
         <song_name>Капитал</song_name>
         <group>Ляпис Трубецкой</group>
         <group_src>lyapis_trubezkoi.html</group_src>
+    </block>
+    <block>
+        <src>malenkaya_devochka.html</src>
+        <href_img>content/images/groups/krematoriy.jpg</href_img>
+        <song_name>Маленькая девочка</song_name>
+        <group>Крематорий</group>
+        <group_src>krematoriy.html</group_src>
+    </block>
+    <block>
+        <src>derevo.html</src>
+        <href_img>content/images/groups/kino.png</href_img>
+        <song_name>Дерево</song_name>
+        <group>Кино</group>
+        <group_src>kino.html</group_src>
+    </block>
+    <block>
+        <src>vperedi.html</src>
+        <href_img>content/images/groups/daite_tank.png</href_img>
+        <song_name>Впереди</song_name>
+        <group>Дайте танк!</group>
+        <group_src>daite_tank.html</group_src>
+    </block>
+    <block>
+        <src>ya_hochu_bit_s_toboi.html</src>
+        <href_img>content/images/groups/nau.jpg</href_img>
+        <song_name>Я хочу быть с тобой</song_name>
+        <group>Наутилус Помпилиус</group>
+        <group_src>nautilus_pompilius.html</group_src>
+    </block>
+    <block>
+        <src>sasha.html</src>
+        <href_img>content/images/groups/kino.png</href_img>
+        <song_name>Саша</song_name>
+        <group>Кино</group>
+        <group_src>kino.html</group_src>
+    </block>
+    <block>
+        <src>bezobraznaya_elsa.html</src>
+        <href_img>content/images/groups/krematoriy.jpg</href_img>
+        <song_name>Безобразная Эльза</song_name>
+        <group>Крематорий</group>
+        <group_src>krematoriy.html</group_src>
+    </block>
+    <block>
+        <src>siyanie.html</src>
+        <href_img>content/images/groups/egor.png</href_img>
+        <song_name>Сияние</song_name>
+        <group>Гражданская Оборона</group>
+        <group_src>perfomer_page.html</group_src>
+    </block>
+    <block>
+        <src>leprozoriy.html</src>
+        <href_img>content/images/groups/krematoriy.jpg</href_img>
+        <song_name>Лепрозорий</song_name>
+        <group>Крематорий</group>
+        <group_src>krematoriy.html</group_src>
+    </block>
+    <block>
+        <src>spokoynaya_noch.html</src>
+        <href_img>content/images/groups/kino.png</href_img>
+        <song_name>Спокойная ночь</song_name>
+        <group>Кино</group>
+        <group_src>kino.html</group_src>
+    </block>
+    <block>
+        <src>severniy_flot.html</src>
+        <href_img>content/images/groups/kish.jpg</href_img>
+        <song_name>Северный флот</song_name>
+        <group>Король и Шут</group>
+        <group_src>korol_i_shut.html</group_src>
+    </block>
+    <block>
+        <src>zakroi_za_mnoy_dver.html</src>
+        <href_img>content/images/groups/kino.png</href_img>
+        <song_name>Закрой за мной дверь</song_name>
+        <group>Кино</group>
+        <group_src>kino.html</group_src>
+    </block>
+    <block>
+        <src>zebri.html</src>
+        <href_img>content/images/groups/krematoriy.jpg</href_img>
+        <song_name>Зебры</song_name>
+        <group>Крематорий</group>
+        <group_src>krematoriy.html</group_src>
+    </block>
+    <block>
+        <src>osen.html</src>
+        <href_img>content/images/groups/ddt.jpg</href_img>
+        <song_name>Осень</song_name>
+        <group>ДДТ</group>
+        <group_src>ddt.html</group_src>
+    </block>
+    <block>
+        <src>zoopark.html</src>
+        <href_img>content/images/groups/egor.png</href_img>
+        <song_name>Зоопарк</song_name>
+        <group>Гражданская Оборона</group>
+        <group_src>perfomer_page.html</group_src>
+    </block>
+    <block>
+        <src>tanec_zlobnogo_geniya.html</src>
+        <href_img>content/images/groups/kish.jpg</href_img>
+        <song_name>Танец злобного гения</song_name>
+        <group>Король и Шут</group>
+        <group_src>korol_i_shut.html</group_src>
+    </block>
+    <block>
+        <src>polkovnik.html</src>
+        <href_img>content/images/groups/7b.jpg</href_img>
+        <song_name>Полковник</song_name>
+        <group>7Б</group>
+        <group_src>7b_page.html</group_src>
+    </block>
+    <block>
+        <src>sexy_cat.html</src>
+        <href_img>content/images/groups/krematoriy.jpg</href_img>
+        <song_name>Sexy cat</song_name>
+        <group>Крематорий</group>
+        <group_src>krematoriy.html</group_src>
+    </block>
+    <block>
+        <src>pro_durochka.html</src>
+        <href_img>content/images/groups/egor.png</href_img>
+        <song_name>Про дурочка</song_name>
+        <group>Гражданская Оборона</group>
+        <group_src>perfomer_page.html</group_src>
+    </block>
+    <block>
+        <src>eta_musika_budet_vechnoy.html</src>
+        <href_img>content/images/groups/nau.jpg</href_img>
+        <song_name>Эта музыка будет вечной</song_name>
+        <group>Наутилус Помпилиус</group>
+        <group_src>nautilus_pompilius.html</group_src>
+    </block>
+    <block>
+        <src>katmandu.html</src>
+        <href_img>content/images/groups/krematoriy.jpg</href_img>
+        <song_name>Катманду</song_name>
+        <group>Крематорий</group>
+        <group_src>krematoriy.html</group_src>
+    </block>
+    <block>
+        <src>iuda_budet_v_rauy.html</src>
+        <href_img>content/images/groups/egor.png</href_img>
+        <song_name>Иуда будет в раю</song_name>
+        <group>Гражданская Оборона</group>
+        <group_src>perfomer_page.html</group_src>
+    </block>
+    <block>
+        <src>romeo_i_dzhulietta.html</src>
+        <href_img>content/images/groups/krematoriy.jpg</href_img>
+        <song_name>Ромео и Джульетта</song_name>
+        <group>Крематорий</group>
+        <group_src>krematoriy.html</group_src>
+    </block>
+    <block>
+        <src>voina.html</src>
+        <href_img>content/images/groups/kino.png</href_img>
+        <song_name>Война</song_name>
+        <group>Кино</group>
+        <group_src>kino.html</group_src>
+    </block>
+    <block>
+        <src>trankvilizator.html</src>
+        <href_img>content/images/groups/kino.png</href_img>
+        <song_name>Транквилизатор</song_name>
+        <group>Кино</group>
+        <group_src>kino.html</group_src>
+    </block>
+    <block>
+        <src>dihanie.html</src>
+        <href_img>content/images/groups/nau.jpg</href_img>
+        <song_name>Дыхание</song_name>
+        <group>Наутилус Помпилиус</group>
+        <group_src>nautilus_pompilius.html</group_src>
+    </block>
+    <block>
+        <src>lesnik.html</src>
+        <href_img>content/images/groups/kish.jpg</href_img>
+        <song_name>Лесник</song_name>
+        <group>Король и Шут</group>
+        <group_src>korol_i_shut.html</group_src>
     </block>
 </blocks>

@@ -1,7 +1,11 @@
 @charset "UTF-8";
 @font-face {
-  font-family: "sitka1";
-  src: url("../content/fonts/sitka-small-599.ttf");
+  font-family: "Bitter";
+  src: url("../content/fonts/sitkalike/Bitter-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("../content/fonts/calibrilike/OpenSans-VariableFont_wdth,wght.ttf");
 }
 body {
   position: relative;
@@ -16,12 +20,16 @@ body {
 body {
   padding: 0 0 0 0;
   margin: 0 0 0 0;
-  font-family: "Calibri Light";
+  font-family: "Bitter";
   background-color: #1e1f22;
 }
 @font-face {
-  font-family: "sitka1";
-  src: url("../content/fonts/sitka-small-599.ttf");
+  font-family: "Bitter";
+  src: url("../content/fonts/sitkalike/Bitter-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("../content/fonts/calibrilike/OpenSans-VariableFont_wdth,wght.ttf");
 }
 body body {
   position: relative;
@@ -93,6 +101,7 @@ body header nav .nav_main__div .menu__block ul li a {
   border-bottom: 1px solid transparent;
   text-decoration: none;
   padding: 24px 16px 20px 16px;
+  font-family: "Open Sans";
 }
 @media (max-width: 780px) {
   body header nav .nav_main__div .menu__block ul li a {
@@ -249,7 +258,7 @@ body header nav .nav_main__div .input__div form {
 }
 body header nav .nav_main__div .input__div form #searchResults {
   display: none;
-  font-family: "Calibri Light";
+  font-family: "Open Sans";
   position: absolute;
   top: 110%;
   left: -50px;
@@ -296,7 +305,7 @@ body header nav .nav_main__div .input__div form .label__search .popular_search_p
   top: 0;
   white-space: nowrap;
   text-overflow: ellipsis;
-  font-family: "Calibri Light";
+  font-family: "Open Sans";
   color: rgba(255, 255, 255, 0.5);
 }
 @media (max-width: 1080px) {
@@ -327,13 +336,25 @@ body .about__us {
 body .about__us p {
   color: #fdfdfd;
   font-size: 2vh;
-  font-family: "Sitka Banner";
+  font-family: "Bitter";
   text-align: justify;
 }
 body .about__us p .citate__span {
   background-color: #2d3034;
   font-style: italic;
-  font-family: "Calibri Light";
+  font-family: "Open Sans";
+}
+@font-face {
+  font-family: "Bitter";
+  src: url("../content/fonts/sitkalike/Bitter-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("../content/fonts/calibrilike/OpenSans-VariableFont_wdth,wght.ttf");
+}
+body body {
+  position: relative;
+  z-index: -2;
 }
 body footer {
   margin-top: 32px;
@@ -348,11 +369,15 @@ body footer .footer__div p {
   margin: 0 0 0 0;
   color: rgba(255, 255, 255, 0.5);
   font-size: 2vh;
-  font-family: "Sitka Banner";
+  font-family: "Bitter";
 }
 @font-face {
-  font-family: "sitka1";
-  src: url("../content/fonts/sitka-small-599.ttf");
+  font-family: "Bitter";
+  src: url("../content/fonts/sitkalike/Bitter-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("../content/fonts/calibrilike/OpenSans-VariableFont_wdth,wght.ttf");
 }
 body body {
   position: relative;

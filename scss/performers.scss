@@ -7,7 +7,7 @@
 body{
   padding: 0 0 0 0;
   margin: 0 0 0 0;
-  font-family: "Calibri Light";
+  font-family: "Open Sans";
   background-color: $bgDivColor;
 
   @import "menu";
@@ -25,7 +25,7 @@ body{
         font-size: $fontSizeXXL;
         color: $fontColor;
         margin: 0 0 0 0;
-        font-family: "Sitka Banner";
+        font-family: "Bitter";
       }
     }
     form{
@@ -45,7 +45,7 @@ body{
         border: $borderColor 1px solid;
         outline: none;
         background-color: transparent;
-        font-family: "Calibri Light";
+        font-family: "Open Sans";
         font-size: $fontSizeL;
         width: 100%;
         border-radius: 8px 0 0 10px;
@@ -57,7 +57,7 @@ body{
         font-size: calc($fontSizeL + 0.2vh);
         //font-size: $fontSizeL;
         padding-left: 0.5vw;
-        font-family: "Calibri Light";
+        font-family: "Open Sans";
         color: rgba(255, 255, 255, 0.5);
       }
       input:hover, input:focus {
@@ -92,7 +92,7 @@ body{
       font-size: $fontSizeL;
       .popular__title{
         p{
-          font-family: "Calibri Light";
+          font-family: "Open Sans";
           color: $fontColor;
           display: inline-block;
           font-size: $fontSizeXL;

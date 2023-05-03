@@ -56,6 +56,7 @@ header{
               border-bottom: 1px solid transparent;
               text-decoration: none;
               padding: 24px 16px 20px 16px;
+              font-family: "Open Sans";
               @media(max-width: 780px){
                 background-color: transparent; //////////////
               }
@@ -233,7 +234,7 @@ header{
           }
           #searchResults {
               display: none;
-              font-family: "Calibri Light";
+              font-family: "Open Sans";
               position: absolute;
               top: 110%;
               left: -50px;
@@ -295,7 +296,7 @@ header{
               white-space: nowrap;
               //overflow: hidden;
               text-overflow: ellipsis;
-              font-family: "Calibri Light";
+              font-family: "Open Sans";
               color: rgba(255, 255, 255, 0.5);
             }
             input:hover, input:focus {

@@ -1,6 +1,11 @@
 @font-face {
-  font-family: "sitka1";
-  src: url("../content/fonts/sitka-small-599.ttf");
+  font-family: "Bitter";
+  src: url("../content/fonts/sitkalike/Bitter-VariableFont_wght.ttf");
+  //font-weight: normal;
+}
+@font-face {
+  font-family: "Open Sans";
+  src:url("../content/fonts/calibrilike/OpenSans-VariableFont_wdth,wght.ttf");
 }
 
 $fontColor: #fdfdfd;
