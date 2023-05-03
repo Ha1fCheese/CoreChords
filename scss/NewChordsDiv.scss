@@ -8,7 +8,7 @@
   }
   width: 100%;
   p{
-    font-family: "Calibri Light";
+    font-family: "Open Sans";
     color: $fontColor;
     display: inline-block;
     margin: 10px 0 0 10vw;
@@ -35,14 +35,14 @@
       @media(max-width: 780px){
         flex-basis: 100%;
       }
-      font-family: "Calibri Light";
+      font-family: "Open Sans";
       color: $fontColor;
       display: inline-block;
       margin: 4px 0 5px 0;
       padding: 4px 0 6px 5px;
       width: 10vw;
       border-left: solid 5px $borderColor;
-      border-right: solid 0px transparent;
+      border-right: solid 0 transparent;
 
       //background-color: #32444d;
       text-decoration: none;

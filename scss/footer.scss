@@ -1,3 +1,5 @@
+@import "constants";
+
 footer{
   margin-top: 32px;
   padding: 8px 0 8px 0;
@@ -9,7 +11,8 @@ footer{
       margin: 0 0 0 0 ;
       color: rgba(255, 255, 255, 0.5);
       font-size: $fontSizeL;
-      font-family: "Sitka Banner";
+      font-family: "Bitter";
+      //font-weight: lighter;
     }
   }
 }

@@ -7,7 +7,7 @@
 body{
   padding: 0 0 0 0;
   margin: 0 0 0 0;
-  font-family: "Calibri Light";
+  font-family: "Bitter";
   background-color: $bgDivColor;
 
   @import "menu";
@@ -22,12 +22,12 @@ body{
   p{
     color: $fontColor;
     font-size: $fontSizeL;
-    font-family: "Sitka Banner";
+    font-family: "Bitter";
     text-align: justify;
     .citate__span{
       background-color: #2d3034;
       font-style: italic;
-      font-family: "Calibri Light";
+      font-family: "Open Sans";
     }
   }
 }

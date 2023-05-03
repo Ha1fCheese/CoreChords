@@ -7,7 +7,7 @@
 body{
   padding: 0 0 0 0;
   margin: 0 0 0 0;
-  font-family: "Calibri Light";
+  font-family: "Open Sans";
   background-color: $bgDivColor;
 
   @import "menu";
@@ -51,7 +51,7 @@ body{
         .perfomer__name__div {
           p {
             color: $fontColor;
-            font-family: "Sitka Banner";
+            font-family: "Bitter";
             font-size: $fontSizeXXL;
             margin: 0 0 0 0;
             @media (max-width: 780px) {
@@ -78,7 +78,7 @@ body{
       font-size: $fontSizeL;
       .popular__title{
         p{
-          font-family: "Calibri Light";
+          font-family: "Open Sans";
           color: $fontColor;
           display: inline-block;
           font-size: $fontSizeXL;

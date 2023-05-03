@@ -1,7 +1,11 @@
 @charset "UTF-8";
 @font-face {
-  font-family: "sitka1";
-  src: url("../content/fonts/sitka-small-599.ttf");
+  font-family: "Bitter";
+  src: url("../content/fonts/sitkalike/Bitter-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("../content/fonts/calibrilike/OpenSans-VariableFont_wdth,wght.ttf");
 }
 body {
   position: relative;
@@ -16,12 +20,16 @@ body {
 body {
   padding: 0 0 0 0;
   margin: 0 0 0 0;
-  font-family: "Calibri Light";
+  font-family: "Open Sans";
   background-color: #1e1f22;
 }
 @font-face {
-  font-family: "sitka1";
-  src: url("../content/fonts/sitka-small-599.ttf");
+  font-family: "Bitter";
+  src: url("../content/fonts/sitkalike/Bitter-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("../content/fonts/calibrilike/OpenSans-VariableFont_wdth,wght.ttf");
 }
 body body {
   position: relative;
@@ -93,6 +101,7 @@ body header nav .nav_main__div .menu__block ul li a {
   border-bottom: 1px solid transparent;
   text-decoration: none;
   padding: 24px 16px 20px 16px;
+  font-family: "Open Sans";
 }
 @media (max-width: 780px) {
   body header nav .nav_main__div .menu__block ul li a {
@@ -249,7 +258,7 @@ body header nav .nav_main__div .input__div form {
 }
 body header nav .nav_main__div .input__div form #searchResults {
   display: none;
-  font-family: "Calibri Light";
+  font-family: "Open Sans";
   position: absolute;
   top: 110%;
   left: -50px;
@@ -296,7 +305,7 @@ body header nav .nav_main__div .input__div form .label__search .popular_search_p
   top: 0;
   white-space: nowrap;
   text-overflow: ellipsis;
-  font-family: "Calibri Light";
+  font-family: "Open Sans";
   color: rgba(255, 255, 255, 0.5);
 }
 @media (max-width: 1080px) {
@@ -315,8 +324,12 @@ body header nav .nav_main__div .input__div form .label__search input:focus ~ .po
   transition: 0.5s;
 }
 @font-face {
-  font-family: "sitka1";
-  src: url("../content/fonts/sitka-small-599.ttf");
+  font-family: "Bitter";
+  src: url("../content/fonts/sitkalike/Bitter-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("../content/fonts/calibrilike/OpenSans-VariableFont_wdth,wght.ttf");
 }
 body body {
   position: relative;
@@ -333,7 +346,7 @@ body .new_chords__div {
   }
 }
 body .new_chords__div p {
-  font-family: "Calibri Light";
+  font-family: "Open Sans";
   color: #fdfdfd;
   display: inline-block;
   margin: 10px 0 0 10vw;
@@ -358,14 +371,14 @@ body .new_chords__div .new_chords__div__items {
 }
 body .new_chords__div .new_chords__div__items a {
   flex-basis: calc(33% - 5vw);
-  font-family: "Calibri Light";
+  font-family: "Open Sans";
   color: #fdfdfd;
   display: inline-block;
   margin: 4px 0 5px 0;
   padding: 4px 0 6px 5px;
   width: 10vw;
   border-left: solid 5px #3a4f67;
-  border-right: solid 0px transparent;
+  border-right: solid 0 transparent;
   text-decoration: none;
   font-size: 2vh;
   white-space: nowrap;
@@ -426,7 +439,7 @@ body .perfomer__main__div .header .perfomer_info {
 }
 body .perfomer__main__div .header .perfomer_info .perfomer__name__div p {
   color: #fdfdfd;
-  font-family: "Sitka Banner";
+  font-family: "Bitter";
   font-size: 6vh;
   margin: 0 0 0 0;
 }
@@ -454,7 +467,7 @@ body .perfomer__main__div .popular__div {
   }
 }
 body .perfomer__main__div .popular__div .popular__title p {
-  font-family: "Calibri Light";
+  font-family: "Open Sans";
   color: #fdfdfd;
   display: inline-block;
   font-size: 3.5vh;
@@ -511,6 +524,18 @@ body .perfomer__main__div .popular__div .next_page a:hover {
   border: 1px solid palegoldenrod;
   transition: all 0.3s ease-in-out;
 }
+@font-face {
+  font-family: "Bitter";
+  src: url("../content/fonts/sitkalike/Bitter-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("../content/fonts/calibrilike/OpenSans-VariableFont_wdth,wght.ttf");
+}
+body body {
+  position: relative;
+  z-index: -2;
+}
 body footer {
   margin-top: 32px;
   padding: 8px 0 8px 0;
@@ -524,11 +549,15 @@ body footer .footer__div p {
   margin: 0 0 0 0;
   color: rgba(255, 255, 255, 0.5);
   font-size: 2vh;
-  font-family: "Sitka Banner";
+  font-family: "Bitter";
 }
 @font-face {
-  font-family: "sitka1";
-  src: url("../content/fonts/sitka-small-599.ttf");
+  font-family: "Bitter";
+  src: url("../content/fonts/sitkalike/Bitter-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("../content/fonts/calibrilike/OpenSans-VariableFont_wdth,wght.ttf");
 }
 body body {
   position: relative;

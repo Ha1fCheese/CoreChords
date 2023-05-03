@@ -11,11 +11,17 @@ checkbox.addEventListener("change", function() {
     }
 });
 
+let logo = document.getElementsByClassName('logo_div')[0];
+logo.style = logo.style + ";cursor: pointer;";
+logo.addEventListener('click',() =>{
+   window.location = 'index.html';
+});
+
 //да, тут контроль версии
 const versionControl = document.getElementsByTagName('footer')[0];
 let div = document.createElement('div');
 div.className = 'footer__div'
 let v = document.createElement('p');
-v.innerHTML = 'Content release 1.0';
+v.innerHTML = 'Content release 1.1 (+font)';
 div.appendChild(v);
 versionControl.appendChild(div);
