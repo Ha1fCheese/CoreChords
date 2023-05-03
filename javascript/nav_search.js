@@ -7,30 +7,16 @@ document.addEventListener('DOMContentLoaded', function() {
     let xmlDoc = request.responseXML;
     const names = xmlDoc.getElementsByTagName('song_name');
     const links = xmlDoc.getElementsByTagName('src');
+    const bghref = xmlDoc.getElementsByTagName('href_img');
+    const gpName = xmlDoc.getElementsByTagName('group');
+    const gpHref = xmlDoc.getElementsByTagName('group_src');
 
-    // Обработчик ввода поискового запроса
+
     searchInput.addEventListener('input', () => {
         const searchTerm = searchInput.value.toLowerCase().trim();
         while (resultsContainer.firstChild) {
             resultsContainer.removeChild(resultsContainer.firstChild);
         }
-
-        /*for (let i = 0; i < xmlDoc.getElementsByTagName('block').length; i++) {
-            let block = xmlDoc.getElementsByTagName('block')[i].childNodes;
-            let xmlSong = block[5].innerHTML;
-            console.log("try");
-            if (xmlSong.toLowerCase().trim().includes(searchTerm)) {
-                searchResults.push(links[i]);
-                console.log("try2");
-                resultsContainer.innerHTML = '';
-                const link = document.createElement('a');
-                link.href = block[1].innerHTML;
-                link.innerText = block[5].innerHTML;
-                resultsContainer.appendChild(link);
-                // resultsContainer.appendChild(document.createElement('br'));
-                console.log("complete");
-            }
-        }*/
 
         const searchResults = [];
         const searchLinks = [];
@@ -49,39 +35,81 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-        /*const matchingSongs = window.xmlSong.filter(song => {
-            return song.name.toLowerCase().includes(searchTerm);
-        });*/
-
-        // Вывести результаты поиска в контейнер
-
-            // resultsContainer.appendChild(document.createElement('br'));
-        /*});*/
-    // });
-
-    // Закрыть результаты поиска при потере фокуса поля ввода
     searchInput.addEventListener("blur", (event) => {
-        // проверяем, является ли элемент, на котором произошло событие, потомком resultsContainer
         if (!resultsContainer.contains(event.relatedTarget)) {
-            // очищаем результаты поиска
             resultsContainer.innerHTML = '';
-            // resultsContainer.event.relatedTarget.remove();
         }
     });
 
-// обработчик события клика на поле поиска
     searchInput.addEventListener("click", () => {
-        // показываем результаты поиска
-
         resultsContainer.style.display = "block";
     });
 
-// обработчик события клика вне поля поиска и результатов поиска
     document.addEventListener("click", (event) => {
         if (!searchInput.contains(event.target) && !resultsContainer.contains(event.target)) {
-            // скрываем результаты поиска
-
             resultsContainer.style.display = "none";
+        }
+    });
+
+    //поиск с блоками
+
+    let popular_search = document.getElementsByClassName('popular_search')[0];
+    let popular_all_elements = document.getElementsByClassName('popular_all_elements')[0];
+    popular_search.addEventListener('input', () => {
+        const searchTerm2 = popular_search.value.toLowerCase().trim();
+        while (popular_all_elements.firstChild) {
+            popular_all_elements.removeChild(popular_all_elements.firstChild);
+        }
+        const searchResults2 = [];
+        const searchLinks2 = [];
+        const searchbg = [];
+        const groupName = [];
+        const groupHref = [];
+        for (let i = 0; i < names.length; i++) {
+            if (names[i].textContent.toLowerCase().trim().includes(searchTerm2)) {
+                searchResults2.push(names[i]);
+                searchLinks2.push(links[i]);
+                searchbg.push(bghref[i]);
+                groupName.push(gpName[i]);
+                groupHref.push(gpHref[i]);
+
+            }
+        }
+        for (let i = 0; i < searchResults2.length; i++) {
+            const linkElement2 = document.createElement('a');
+            linkElement2.textContent = searchResults2[i].textContent;
+            linkElement2.href = searchLinks2[i].textContent;
+            // popular_all_elements.appendChild(linkElement2);
+
+            let popular__base = document.createElement('div');
+            popular__base.className = "popular__base";
+            let popular__element = document.createElement('div');
+            popular__element.className = "popular__element";
+            popular__base.appendChild(popular__element);
+
+            let a_bg = document.createElement('a');
+            a_bg.className = "bg";
+            // a_bg.id = "el"
+            a_bg.style = 'background: url("' + searchbg[i].textContent + '") no-repeat center center;' + "background-size: cover ;";
+            a_bg.href = searchLinks2[i].textContent;
+            popular__element.appendChild(a_bg);
+
+            let info__block = document.createElement('div');
+            info__block.className = "info__block";
+            popular__element.appendChild(info__block);
+
+            let song_name = document.createElement('a');
+            song_name.href = searchLinks2[i].textContent;
+            song_name.innerHTML = searchResults2[i].textContent;
+            info__block.appendChild(song_name);
+
+            let group = document.createElement('a');
+            group.href = groupHref[i].textContent;
+            group.innerHTML = groupName[i].textContent;
+            info__block.appendChild(group);
+
+            document.body.getElementsByClassName("popular_all_elements")[0].appendChild(popular__base);
+
         }
     });
 });
