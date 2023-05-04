@@ -20,6 +20,8 @@
       flex-direction: column;
       padding: 5px;
       background-color: rgba(52, 86, 136, 0.5);
+      border-radius: 10px 0 0 10px;
+
       div{
         display: flex;
         justify-content: space-between;
@@ -51,10 +53,14 @@
       outline:none;
       border:none;
       color: $fontColor;
-      font-size: $fontSizeL;
+      //font-size: $fontSizeL;
       box-shadow: $shadowColor 0 4px 8px 0;
+      //font-size: calc(($fontSizeM + 1vw) * 0.6);
+      font-size: 20px;
       @media(max-width: 780px){
+        border-radius: 6px 6px 6px 6px;
         box-shadow: none;
+        font-size: calc(($fontSizeL + 1vw) * 1.2);
       }
     }
     .btn__ton{
@@ -244,15 +250,19 @@ body{
         display: inline-block;
         position: relative;
         //right: 50vh;
-        margin-right: 5vw;
+        margin-right: calc((2.5vw + 2.5vh));
         //height: 100%;
         //background: url("../content/images/plug2.png") no-repeat center center;
         span{
           display: block;
           color: rgba(255, 255, 255, 0.5);
-          font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono", "Droid Sans Mono", monospace, monospace;
-          font-size: 15vw;
-          font-weight: 100;
+          //font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono", "Droid Sans Mono", monospace, monospace;
+          font-family: "Open Sans";
+          font-stretch: ultra-condensed;
+          //font-weight: bolder;
+          //font-kerning: initial;
+          font-size: calc( (1vw + 1vh) * 5);
+          //font-weight: 100;
         }
         img{
 
@@ -263,24 +273,25 @@ body{
         right: 0;
       }
       input:checked ~ .div_btns_anim, input:checked ~ label{
-        right: 0;
+        right: calc( (2vw + 2vh)* 0.4);
         //background-color: #00ecff;
         transition: 0.2s ease-in-out;
         span{
           rotate: 180deg;
           transition: 0.2s ease-in-out;
           color:palegoldenrod;
+
           //width: 50%;
           //font-stretch: expanded;
         }
       }
       input:not(:checked) ~ .div_btns_anim, input:not(:checked) ~ label{
-        right: -22vh;
-        @media(min-height:896px ){
-          right: -18.5vh;
+        right: calc( (-40vh + 25vw) * 0.9);
+        @media(min-height:800px ){
+          right: calc( (-40vh + 25vw) * 0.8);
         }
-        @media(min-height: 1200px){
-          right: -16vh;
+        @media(min-height: 1000px){
+          right: calc( (-40vh + 25vw) * 1);
         }
         //background-color: #851c1c;
         transition: 0.2s ease-in-out;
