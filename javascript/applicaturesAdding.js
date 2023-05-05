@@ -3,7 +3,7 @@ pre.forEach((pre) =>{
     pre.innerHTML = pre.innerHTML.replace(new RegExp(toSearch.join("|"),"g"), function (match) {
         if(!foundGroups[match]){
             const img = document.createElement('img');
-            const chordsContainer = document.querySelector('.applicature_images');
+
             let src = '';
             if(match === 'A'){
                 src = 'content/images/chords/A.png';
@@ -17,7 +17,7 @@ pre.forEach((pre) =>{
             else if(match === 'A#m'){
                 src = 'content/images/chords/Adiezm.png';
             }
-            else if(match === 'Am'){
+            else if(match === ' Am '){
                 src = 'content/images/chords/Am.png';
             }
             else if(match === 'B'){

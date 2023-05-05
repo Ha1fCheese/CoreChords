@@ -11,11 +11,9 @@
     @media(max-width: 1080px){
       @media (min-width: 781px) {
         width: 70%;
-        //justify-content: center;
       }
     }
     @media(max-width: 780px){
-      //width: 100%;
       display: flex;
       flex-direction: column;
       padding: 5px;
@@ -53,9 +51,7 @@
       outline:none;
       border:none;
       color: $fontColor;
-      //font-size: $fontSizeL;
       box-shadow: $shadowColor 0 4px 8px 0;
-      //font-size: calc(($fontSizeM + 1vw) * 0.6);
       font-size: 20px;
       @media(max-width: 780px){
         border-radius: 6px 6px 6px 6px;
@@ -114,9 +110,7 @@ body{
       margin: 0 3px 0 3px;
     }
     .header{
-      //text-align: right;
       display: flex;
-      //justify-content: space-between;
       .perfomer__img__div{
         display: inline-block;
 
@@ -137,7 +131,6 @@ body{
         justify-content: space-around;
         .perfomer__name__div {
           p,a {
-            //text-decoration:none ;
             color: $fontColor;
             font-family: "Open Sans";
             font-size: $fontSizeXL;
@@ -164,7 +157,6 @@ body{
       @media(max-width: 1080px){
         flex-direction: column;
       }
-      //justify-content: center;
       .applicature__div{
         display: flex;
         width: 15vw;
@@ -176,7 +168,6 @@ body{
         @media(max-width: 1080px){
           order: 2;
         }
-        //justify-content: space-around;
         .applicature__header{
           p{
             color: $fontColor;
@@ -194,14 +185,11 @@ body{
               height: 100px;
               width: 100px;
             }
-            //filter: invert(0.88);
           }
         }
       }
       .chords{
         display:flex;
-        //justify-content: center;
-        //margin:auto;
         flex-direction: column;
         @include control__btns;
         @media (max-width: 780px) {
@@ -215,11 +203,9 @@ body{
             font-size: 10px;
           }
           color: $fontColor;
-          //text-decoration: underline;
           span{
             background-color: #3b3b3b;
             padding: 0 2px 0 2px;
-            //border: 1px solid #23629a;
             border-radius: 3px;
           }
         }
@@ -239,7 +225,6 @@ body{
     float: left;
     top:50vh;
     right: 0;
-    //background-color: black;
     .slider__button{
       display: flex;
       align-items: center;
@@ -249,20 +234,13 @@ body{
       label{
         display: inline-block;
         position: relative;
-        //right: 50vh;
         margin-right: calc((2.5vw + 2.5vh));
-        //height: 100%;
-        //background: url("../content/images/plug2.png") no-repeat center center;
         span{
           display: block;
           color: rgba(255, 255, 255, 0.5);
-          //font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono", "Droid Sans Mono", monospace, monospace;
           font-family: "Open Sans";
           font-stretch: ultra-condensed;
-          //font-weight: bolder;
-          //font-kerning: initial;
           font-size: calc( (1vw + 1vh) * 5);
-          //font-weight: 100;
         }
         img{
 
@@ -274,15 +252,11 @@ body{
       }
       input:checked ~ .div_btns_anim, input:checked ~ label{
         right: calc( (2vw + 2vh)* 0.4);
-        //background-color: #00ecff;
         transition: 0.2s ease-in-out;
         span{
           rotate: 180deg;
           transition: 0.2s ease-in-out;
           color:palegoldenrod;
-
-          //width: 50%;
-          //font-stretch: expanded;
         }
       }
       input:not(:checked) ~ .div_btns_anim, input:not(:checked) ~ label{
@@ -293,9 +267,7 @@ body{
         @media(min-height: 1000px){
           right: calc( (-40vh + 25vw) * 1);
         }
-        //background-color: #851c1c;
         transition: 0.2s ease-in-out;
-        //display: none;
         span{
           rotate: 0deg;
           transition: 0.2s ease-in-out;
