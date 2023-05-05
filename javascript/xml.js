@@ -30,7 +30,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
         let a_bg = document.createElement('a');
         a_bg.className = "bg";
-        // a_bg.id = "el"
         a_bg.style = 'background: url("' + block[3].innerHTML + '") no-repeat center center;' + "background-size: cover ;";
         a_bg.href = block[1].innerHTML;
         popular__element.appendChild(a_bg);

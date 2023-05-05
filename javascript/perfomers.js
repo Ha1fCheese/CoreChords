@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     let popular__div = document.getElementsByClassName('popular__div')[0]
-    // const resultsContainer = document.getElementById('searchResults');
+
     let request = new XMLHttpRequest();
     request.open('GET', "data/blocks.xml",false);
     request.send();
@@ -8,11 +8,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const groupName = xmlDoc.getElementsByTagName('group');
     const links = xmlDoc.getElementsByTagName('group_src');
-    // const searchTerm = document.getElementsByClassName('perfomer__name__title')[0].innerHTML;
-    /*let perfomer__img__div = document.getElementsByClassName('perfomer__img__div')[0];
-    let img = document.createElement('img');
-    img.src = xmlDoc.getElementsByTagName('src').innerHTML;
-    perfomer__img__div.appendChild(img);*/
 
     const searchResults = [];
     searchResults.push(groupName[0]);
@@ -35,14 +30,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         counter = 0;
     }
-    // const numbers = [-1, 3, 9, -9, 100, -100, 100, 100];
-    // const newSet = new Set(groupName);
-    // const searchResults = Array.from(newSet);
-    // const newSet2 = new Set(links);
-    // const searchLinks = Array.from(newSet2);
-
-    // console.log(groupName[2].textContent)
-    // console.log(searchResults[2].textContent);
 
     for (let i = 0; i < searchResults.length; i++) {
 
@@ -51,7 +38,6 @@ document.addEventListener('DOMContentLoaded', function() {
         popular__div.appendChild(table_element);
 
         const linkElement = document.createElement('a');
-        // linkElement.id =
         linkElement.textContent = searchResults[i].textContent;
         linkElement.href = searchLinks[i].textContent;
         table_element.appendChild(linkElement);
@@ -64,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const gpName2 = xmlDoc.getElementsByTagName('group');
     const gpHref2 = xmlDoc.getElementsByTagName('group_src');
     let popular_search2 = document.getElementsByClassName('popular_search')[0];
-    // let popular__div = document.getElementsByClassName('popular__div')[0];
+
     document.addEventListener('input', () =>{
         const searchTerm3 = popular_search2.value.toLowerCase().trim();
         while (popular__div.firstChild) {
@@ -96,9 +82,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
         const searchResults3 = [];
         const searchLinks3 = [];
-        // searchResults3.push(gpName2[0]);
-        // searchLinks3.push(gpHref2[0]);
-
 
         let counter2 = 0;
 
@@ -124,7 +107,7 @@ document.addEventListener('DOMContentLoaded', function() {
             popular__div.appendChild(table_element2);
 
             const linkElement2 = document.createElement('a');
-            // linkElement.id =
+
             linkElement2.textContent = searchResults3[i].textContent;
             linkElement2.href = searchLinks3[i].textContent;
             table_element2.appendChild(linkElement2);

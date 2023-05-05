@@ -28,7 +28,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         for (let i = 0; i < searchResults.length; i++) {
             const linkElement = document.createElement('a');
-            // linkElement.id =
             linkElement.textContent = searchResults[i].textContent;
             linkElement.href = searchLinks[i].textContent;
             resultsContainer.appendChild(linkElement);
@@ -79,7 +78,6 @@ document.addEventListener('DOMContentLoaded', function() {
             const linkElement2 = document.createElement('a');
             linkElement2.textContent = searchResults2[i].textContent;
             linkElement2.href = searchLinks2[i].textContent;
-            // popular_all_elements.appendChild(linkElement2);
 
             let popular__base = document.createElement('div');
             popular__base.className = "popular__base";
@@ -89,7 +87,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
             let a_bg = document.createElement('a');
             a_bg.className = "bg";
-            // a_bg.id = "el"
             a_bg.style = 'background: url("' + searchbg[i].textContent + '") no-repeat center center;' + "background-size: cover ;";
             a_bg.href = searchLinks2[i].textContent;
             popular__element.appendChild(a_bg);
