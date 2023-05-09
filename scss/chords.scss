@@ -1,5 +1,8 @@
 @import "constants";
-
+body{
+  position: relative;
+  z-index: -2;
+}
 //кнопки управления
 @mixin control__btns{
   .control_buttons{

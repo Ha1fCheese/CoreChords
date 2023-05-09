@@ -30,10 +30,6 @@ body {
   font-family: "Open Sans";
   src: url("../content/fonts/calibrilike/OpenSans-VariableFont_wdth,wght.ttf");
 }
-body body {
-  position: relative;
-  z-index: -2;
-}
 body header nav {
   background-color: #0d243f;
   padding-top: 8px;
@@ -91,7 +87,7 @@ body header nav .nav_main__div .menu__block ul {
 }
 body header nav .nav_main__div .menu__block ul li {
   display: inline-block;
-  font-size: 1.58vh;
+  font-size: calc((1vw + 1vh) * 0.6);
 }
 body header nav .nav_main__div .menu__block ul li a {
   text-transform: uppercase;
@@ -238,7 +234,7 @@ body header nav .nav_main__div .menu__block ul .here {
 }
 body header nav .nav_main__div .input__div form {
   display: flex;
-  font-size: 1.58vh;
+  font-size: calc((1vw + 1vh) * 0.6);
   position: relative;
   width: 15vw;
 }
@@ -262,7 +258,7 @@ body header nav .nav_main__div .input__div form #searchResults {
 @media (max-width: 840px) {
   body header nav .nav_main__div .input__div form #searchResults {
     top: 120%;
-    font-size: 2.58vh;
+    font-size: calc((1vw + 1vh) * 0.6 + 1vh);
     width: 70vw;
     left: -50vw;
   }
@@ -293,8 +289,8 @@ body header nav .nav_main__div .input__div form .label__search input {
 }
 body header nav .nav_main__div .input__div form .label__search .popular_search_placeholder {
   position: absolute;
-  top: 0;
-  font-size: calc((1.58vh + 1vw) * 0.5);
+  top: 0.4vh;
+  font-size: calc((1vw + 1vh) * 0.6);
   white-space: nowrap;
   text-overflow: ellipsis;
   font-family: "Open Sans";
@@ -302,8 +298,14 @@ body header nav .nav_main__div .input__div form .label__search .popular_search_p
 }
 @media (max-width: 1080px) {
   body header nav .nav_main__div .input__div form .label__search .popular_search_placeholder {
-    font-size: calc((1.58vh + 1vw) * 0.5);
-    top: 5px;
+    font-size: calc((1vw + 1vh) * 0.6);
+    top: 0.9vh;
+  }
+}
+@media (max-width: 520px) {
+  body header nav .nav_main__div .input__div form .label__search .popular_search_placeholder {
+    font-size: calc((1vw + 1vh) * 0.6);
+    top: 1.2vh;
   }
 }
 body header nav .nav_main__div .input__div form .label__search input:hover, body header nav .nav_main__div .input__div form .label__search input:focus {
@@ -322,10 +324,6 @@ body header nav .nav_main__div .input__div form .label__search input:focus ~ .po
 @font-face {
   font-family: "Open Sans";
   src: url("../content/fonts/calibrilike/OpenSans-VariableFont_wdth,wght.ttf");
-}
-body body {
-  position: relative;
-  z-index: -2;
 }
 body .new_chords__div {
   padding: 10px 0 10px 0;
@@ -589,10 +587,6 @@ body .to_find_main__div .popular__div .next_page a:hover {
   font-family: "Open Sans";
   src: url("../content/fonts/calibrilike/OpenSans-VariableFont_wdth,wght.ttf");
 }
-body body {
-  position: relative;
-  z-index: -2;
-}
 body footer {
   margin-top: 32px;
   padding: 8px 0 8px 0;
@@ -615,10 +609,6 @@ body footer .footer__div p {
 @font-face {
   font-family: "Open Sans";
   src: url("../content/fonts/calibrilike/OpenSans-VariableFont_wdth,wght.ttf");
-}
-body body {
-  position: relative;
-  z-index: -2;
 }
 body #btnScrollToTop {
   padding: 18px 24px;

@@ -51,5 +51,5 @@ document.addEventListener('DOMContentLoaded', function() {
         document.body.getElementsByClassName("popular_all_elements")[0].appendChild(popular__base);
     }
 
-    document.addEventListener('');
+    // document.addEventListener('');
 });

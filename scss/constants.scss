@@ -12,13 +12,7 @@ $bgDivColor: #1e1f22;
 $borderColor: #3a4f67;
 $shadowColor: rgba(0, 0, 0, 0.5);
 
-$fontSizeM: 1.58vh;
+$fontSizeM: calc((1vw + 1vh) * 0.6);
 $fontSizeL: 2vh;
 $fontSizeXL: 3.5vh;
 $fontSizeXXL: 6vh;
-
-body{
-  position: relative;
-  z-index: -2;
-}
-

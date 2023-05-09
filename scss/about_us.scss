@@ -1,17 +1,18 @@
 @import "constants";
-
+body{
+  position: relative;
+  z-index: -2;
+}
 .logo{
   width: 131.97px;
   height: 30.08px;
 }
+@import "menu";
 body{
   padding: 0 0 0 0;
   margin: 0 0 0 0;
   font-family: "Bitter";
   background-color: $bgDivColor;
-
-  @import "menu";
-
 .about__us{
   display: flex;
   margin-left: 10vw;
