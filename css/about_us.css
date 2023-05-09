@@ -228,9 +228,8 @@ header nav .nav_main__div .menu__block ul .here {
 }
 header nav .nav_main__div .input__div form {
   display: flex;
-  font-size: calc((1vw + 1vh) * 0.6);
+  font-size: 2vh;
   position: relative;
-  width: 15vw;
 }
 @media (max-width: 840px) {
   header nav .nav_main__div .input__div form {

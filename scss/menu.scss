@@ -196,9 +196,9 @@ header{
         }
         form {
           display: flex;
-          font-size: $fontSizeM;
+          font-size: $fontSizeL;
           position: relative;
-          width: 15vw;
+          //width: 15vw;
           @media(max-width: 840px){
             order: 3;
           }
@@ -239,8 +239,6 @@ header{
               padding-top: 4px;
               padding-bottom: 4px;
               width: 100%;
-              @media (max-width: 840px){
-              }
               background-color: transparent;
               outline: none;
               border: none;
