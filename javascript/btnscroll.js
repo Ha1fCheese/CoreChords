@@ -78,7 +78,7 @@ slowDownButton2.addEventListener('click', () => {
     scrollSpeed += 100;
     scrollDisplay -= 1;
 
-    if (scrollDisplay >= 0) {
+    if (scrollDisplay <= 0) {
         scrollSpeed = 550;
         scrollDisplay = 0;
     }
