@@ -198,9 +198,9 @@ header{
           display: flex;
           font-size: $fontSizeL;
           position: relative;
-          //width: 15vw;
           @media(max-width: 840px){
             order: 3;
+            width: 15vw;
           }
           #searchResults {
               display: none;
