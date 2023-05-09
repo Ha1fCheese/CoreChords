@@ -1,4 +1,8 @@
 @import "constants";
+body{
+  position: relative;
+  z-index: -2;
+}
 .logo{
   width: 131.97px;
   height: 30.08px;

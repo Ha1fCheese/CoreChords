@@ -251,11 +251,15 @@ header{
 
             .popular_search_placeholder {
               position: absolute;
-              top: 0;
-              font-size: calc(($fontSizeM + 1vw) * 0.5 );
+              top: 0.4vh;
+              font-size: $fontSizeM;
               @media(max-width: 1080px){
-                font-size: calc(($fontSizeM + 1vw) * 0.5 );
-                top:5px;
+                font-size: $fontSizeM;
+                top:calc(0.9vh );
+              }
+              @media(max-width: 520px){
+                font-size: $fontSizeM;
+                top:calc(1.2vh );
               }
               white-space: nowrap;
               text-overflow: ellipsis;
