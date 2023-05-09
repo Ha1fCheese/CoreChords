@@ -1,2 +1,2 @@
-# CoreChords corechords.space
+# CoreChords https://corechords.space
 site with chords
