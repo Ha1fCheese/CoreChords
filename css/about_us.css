@@ -234,6 +234,7 @@ header nav .nav_main__div .input__div form {
 @media (max-width: 840px) {
   header nav .nav_main__div .input__div form {
     order: 3;
+    width: 15vw;
   }
 }
 header nav .nav_main__div .input__div form #searchResults {
