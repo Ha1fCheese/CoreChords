@@ -1,2 +1,2 @@
-# CoreChords https://ha1fcheese.github.io/CoreChords/
+# CoreChords corechords.space
 site with chords
