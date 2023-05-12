@@ -243,9 +243,6 @@ body{
           font-stretch: ultra-condensed;
           font-size: calc( (1vw + 1vh) * 5);
         }
-        img{
-
-        }
       }
       .div_btns_anim{
         position: relative;
@@ -260,14 +257,12 @@ body{
           color:palegoldenrod;
         }
       }
-      input:not(:checked) ~ .div_btns_anim, input:not(:checked) ~ label{
-        right: calc( (-40vh + 25vw) * 0.9);
-        @media(min-height:800px ){
-          right: calc( (-40vh + 25vw) * 0.8);
-        }
-        @media(min-height: 1000px){
-          right: calc( (-40vh + 25vw) * 1);
-        }
+      input:not(:checked) ~ .div_btns_anim{
+        right: -200px;
+        transition: 0.2s ease-in-out;
+      }
+      input:not(:checked) ~ label{
+        right: -75%;
         transition: 0.2s ease-in-out;
         span{
           rotate: 0deg;
