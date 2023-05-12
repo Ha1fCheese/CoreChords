@@ -326,7 +326,7 @@ body .about__us {
 }
 @media (max-width: 780px) {
   body .about__us {
-    margin: 0 3px 0 3px;
+    margin: 0 20px 0 20px;
   }
 }
 body .about__us p {

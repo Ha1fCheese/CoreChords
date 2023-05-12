@@ -706,28 +706,18 @@ body #btnScrollToTop:not(:hover) {
     transition: 0.2s ease-in-out;
     color: palegoldenrod;
   }
-  .control__side__menu__div .slider__button input:not(:checked) ~ .div_btns_anim, .control__side__menu__div .slider__button input:not(:checked) ~ label {
-    right: calc((-40vh + 25vw) * 0.9);
+  .control__side__menu__div .slider__button input:not(:checked) ~ .div_btns_anim {
+    right: -200px;
     transition: 0.2s ease-in-out;
   }
-}
-@media (max-width: 780px) and (min-height: 800px) {
-  .control__side__menu__div .slider__button input:not(:checked) ~ .div_btns_anim, .control__side__menu__div .slider__button input:not(:checked) ~ label {
-    right: calc((-40vh + 25vw) * 0.8);
+  .control__side__menu__div .slider__button input:not(:checked) ~ label {
+    right: -75%;
+    transition: 0.2s ease-in-out;
   }
-}
-@media (max-width: 780px) and (min-height: 1000px) {
-  .control__side__menu__div .slider__button input:not(:checked) ~ .div_btns_anim, .control__side__menu__div .slider__button input:not(:checked) ~ label {
-    right: calc((-40vh + 25vw) * 1);
-  }
-}
-@media (max-width: 780px) {
-  .control__side__menu__div .slider__button input:not(:checked) ~ .div_btns_anim span, .control__side__menu__div .slider__button input:not(:checked) ~ label span {
+  .control__side__menu__div .slider__button input:not(:checked) ~ label span {
     rotate: 0deg;
     transition: 0.2s ease-in-out;
   }
-}
-@media (max-width: 780px) {
   .control__side__menu__div .control_buttons {
     color: #fdfdfd;
     display: flex;
