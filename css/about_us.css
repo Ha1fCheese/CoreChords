@@ -282,6 +282,7 @@ header nav .nav_main__div .input__div form .label__search input {
   z-index: 1;
 }
 header nav .nav_main__div .input__div form .label__search .popular_search_placeholder {
+  transition: 0.5s;
   position: absolute;
   top: 0.4vh;
   font-size: calc((1vw + 1vh) * 0.6);

@@ -289,6 +289,7 @@ body header nav .nav_main__div .input__div form .label__search input {
   z-index: 1;
 }
 body header nav .nav_main__div .input__div form .label__search .popular_search_placeholder {
+  transition: 0.5s;
   position: absolute;
   top: 0.4vh;
   font-size: calc((1vw + 1vh) * 0.6);
@@ -361,6 +362,7 @@ body .new_chords__div .new_chords__div__items {
   }
 }
 body .new_chords__div .new_chords__div__items a {
+  transition: 0.2s ease-in-out;
   flex-basis: calc(33% - 5vw);
   font-family: "Open Sans";
   color: #fdfdfd;
@@ -392,7 +394,7 @@ body .new_chords__div .new_chords__div__items a:hover, body .new_chords__div .ne
   border-left: solid 1px palegoldenrod;
   border-right: solid 4px transparent;
   box-shadow: none;
-  transition: 0.2s;
+  transition: 0.2s ease-in-out;
 }
 body .perfomer__main__div {
   margin: 0 10vw 0 10vw;
@@ -532,6 +534,7 @@ body .perfomer__main__div .main_part_chords .chords .control_buttons p {
   font-size: 2vh;
 }
 body .perfomer__main__div .main_part_chords .chords .control_buttons button {
+  transition: 0.2s ease-in-out;
   height: 28px;
   width: 28px;
   border-radius: 0.3vw 0.3vw 0.3vw 0.3vw;
@@ -560,7 +563,6 @@ body .perfomer__main__div .main_part_chords .chords .control_buttons .btn__ton {
 body .perfomer__main__div .main_part_chords .chords .control_buttons .btn__ton:hover, body .perfomer__main__div .main_part_chords .chords .control_buttons .btn__ton:focus {
   background-color: #851c1c;
   box-shadow: none;
-  border: solid 1px palegoldenrod;
   transition: 0.2s ease-in-out;
 }
 body .perfomer__main__div .main_part_chords .chords .control_buttons .btn__scroll {
@@ -569,7 +571,6 @@ body .perfomer__main__div .main_part_chords .chords .control_buttons .btn__scrol
 body .perfomer__main__div .main_part_chords .chords .control_buttons .btn__scroll:hover, body .perfomer__main__div .main_part_chords .chords .control_buttons .btn__scroll:focus {
   background-color: #1d7a2e;
   box-shadow: none;
-  border: solid 1px palegoldenrod;
   transition: 0.2s ease-in-out;
 }
 body .perfomer__main__div .main_part_chords .chords .control_buttons .btn__fontsize {
@@ -578,7 +579,6 @@ body .perfomer__main__div .main_part_chords .chords .control_buttons .btn__fonts
 body .perfomer__main__div .main_part_chords .chords .control_buttons .btn__fontsize:hover, body .perfomer__main__div .main_part_chords .chords .control_buttons .btn__fontsize:focus {
   background-color: #1c4e7a;
   box-shadow: none;
-  border: solid 1px palegoldenrod;
   transition: 0.2s ease-in-out;
 }
 @media (max-width: 780px) {
@@ -772,6 +772,7 @@ body #btnScrollToTop:not(:hover) {
 }
 @media (max-width: 780px) {
   .control__side__menu__div .control_buttons button {
+    transition: 0.2s ease-in-out;
     height: 28px;
     width: 28px;
     border-radius: 0.3vw 0.3vw 0.3vw 0.3vw;
@@ -804,7 +805,6 @@ body #btnScrollToTop:not(:hover) {
   .control__side__menu__div .control_buttons .btn__ton:hover, .control__side__menu__div .control_buttons .btn__ton:focus {
     background-color: #851c1c;
     box-shadow: none;
-    border: solid 1px palegoldenrod;
     transition: 0.2s ease-in-out;
   }
 }
@@ -817,7 +817,6 @@ body #btnScrollToTop:not(:hover) {
   .control__side__menu__div .control_buttons .btn__scroll:hover, .control__side__menu__div .control_buttons .btn__scroll:focus {
     background-color: #1d7a2e;
     box-shadow: none;
-    border: solid 1px palegoldenrod;
     transition: 0.2s ease-in-out;
   }
 }
@@ -830,7 +829,6 @@ body #btnScrollToTop:not(:hover) {
   .control__side__menu__div .control_buttons .btn__fontsize:hover, .control__side__menu__div .control_buttons .btn__fontsize:focus {
     background-color: #1c4e7a;
     box-shadow: none;
-    border: solid 1px palegoldenrod;
     transition: 0.2s ease-in-out;
   }
 }

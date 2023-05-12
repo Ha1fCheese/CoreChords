@@ -288,6 +288,7 @@ body header nav .nav_main__div .input__div form .label__search input {
   z-index: 1;
 }
 body header nav .nav_main__div .input__div form .label__search .popular_search_placeholder {
+  transition: 0.5s;
   position: absolute;
   top: 0.4vh;
   font-size: calc((1vw + 1vh) * 0.6);
@@ -360,6 +361,7 @@ body .new_chords__div .new_chords__div__items {
   }
 }
 body .new_chords__div .new_chords__div__items a {
+  transition: 0.2s ease-in-out;
   flex-basis: calc(33% - 5vw);
   font-family: "Open Sans";
   color: #fdfdfd;
@@ -391,7 +393,7 @@ body .new_chords__div .new_chords__div__items a:hover, body .new_chords__div .ne
   border-left: solid 1px palegoldenrod;
   border-right: solid 4px transparent;
   box-shadow: none;
-  transition: 0.2s;
+  transition: 0.2s ease-in-out;
 }
 body .to_find_main__div {
   background-color: #1e1f22;
@@ -436,6 +438,7 @@ body .to_find_main__div form .popular_search_placeholder {
   padding-left: 0.5vw;
   font-family: "Open Sans";
   color: rgba(255, 255, 255, 0.5);
+  transition: 0.5s;
 }
 body .to_find_main__div form input:hover, body .to_find_main__div form input:focus {
   background-color: rgba(0, 0, 0, 0.08);

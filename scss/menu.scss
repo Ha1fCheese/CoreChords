@@ -248,6 +248,7 @@ header{
             }
 
             .popular_search_placeholder {
+              transition: 0.5s;
               position: absolute;
               top: 0.4vh;
               font-size: $fontSizeM;
