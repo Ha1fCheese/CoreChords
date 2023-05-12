@@ -27,6 +27,7 @@
       margin: 0 3px 0 3px;
     }
     a {
+      transition: 0.2s ease-in-out;
       flex-basis: calc(33% - 5vw);
       @media(max-width: 1080px ){
         flex-basis:calc(50% - 5vw );
@@ -57,7 +58,7 @@
       border-right: solid 4px transparent;
 
       box-shadow: none;
-      transition: 0.2s;
+      transition: 0.2s ease-in-out;
     }
   }
 }

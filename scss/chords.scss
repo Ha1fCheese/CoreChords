@@ -44,6 +44,7 @@ body{
 
     }
     button{
+      transition: 0.2s ease-in-out;
       height: 28px;
       width: 28px;
       @media (min-width: 1900px) {
@@ -68,7 +69,6 @@ body{
     .btn__ton:hover, .btn__ton:focus{
       background-color: #851c1c;
       box-shadow: none;
-      border: solid 1px palegoldenrod;
       transition: 0.2s ease-in-out;
     }
     .btn__scroll{
@@ -77,7 +77,6 @@ body{
     .btn__scroll:hover, .btn__scroll:focus{
       background-color: #1d7a2e;
       box-shadow: none;
-      border: solid 1px palegoldenrod;
       transition: 0.2s ease-in-out;
     }
     .btn__fontsize{
@@ -86,7 +85,6 @@ body{
     .btn__fontsize:hover, .btn__fontsize:focus{
       background-color: #1c4e7a;
       box-shadow: none;
-      border: solid 1px palegoldenrod;
       transition: 0.2s ease-in-out;
     }
   }
