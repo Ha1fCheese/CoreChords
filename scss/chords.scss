@@ -20,7 +20,8 @@ body{
       display: flex;
       flex-direction: column;
       padding: 5px;
-      background-color: rgba(52, 86, 136, 0.5);
+      backdrop-filter: blur(3px);
+      background-color: rgba(19, 19, 19, 0.5);
       border-radius: 10px 0 0 10px;
 
       div{
@@ -60,30 +61,33 @@ body{
       @media(max-width: 780px){
         border-radius: 6px 6px 6px 6px;
         box-shadow: none;
-        font-size: calc(($fontSizeL + 1vw) * 1.2);
+        font-size: calc(($fontSizeL + 1.5vw) * 1);
       }
     }
     .btn__ton{
-      background-color: #9d2121;
+      background-color: transparent;
+      border: 2px solid #9d2121;
     }
     .btn__ton:hover, .btn__ton:focus{
-      background-color: #851c1c;
+      background-color: #9d2121;
       box-shadow: none;
       transition: 0.2s ease-in-out;
     }
     .btn__scroll{
-      background-color: #239a37;
+      background-color: transparent ;
+      border: 2px solid #239a37;
     }
     .btn__scroll:hover, .btn__scroll:focus{
-      background-color: #1d7a2e;
+      background-color: #239a37;
       box-shadow: none;
       transition: 0.2s ease-in-out;
     }
     .btn__fontsize{
-      background-color: #23629a;
+      background-color: transparent;
+      border: 2px solid #23629a;
     }
     .btn__fontsize:hover, .btn__fontsize:focus{
-      background-color: #1c4e7a;
+      background-color: #23629a;
       box-shadow: none;
       transition: 0.2s ease-in-out;
     }
@@ -254,6 +258,7 @@ body{
         span{
           rotate: 180deg;
           transition: 0.2s ease-in-out;
+          text-shadow: 0 -2px 5px black;
           color:palegoldenrod;
         }
       }
