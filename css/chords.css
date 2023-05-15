@@ -555,7 +555,6 @@ body .perfomer__main__div .main_part_chords .chords .control_buttons button {
   body .perfomer__main__div .main_part_chords .chords .control_buttons button {
     border-radius: 6px 6px 6px 6px;
     box-shadow: none;
-    font-size: calc((2vh + 1.5vw) * 1);
   }
 }
 body .perfomer__main__div .main_part_chords .chords .control_buttons .btn__ton {
@@ -789,7 +788,6 @@ body #btnScrollToTop:not(:hover) {
   .control__side__menu__div .control_buttons button {
     border-radius: 6px 6px 6px 6px;
     box-shadow: none;
-    font-size: calc((2vh + 1.5vw) * 1);
   }
 }
 @media (max-width: 780px) {
