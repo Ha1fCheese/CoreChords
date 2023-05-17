@@ -36,9 +36,9 @@ body{
       justify-content: center;
       flex-direction: column;
       h1{
-        font-size: $fontSizeXXL * 2;
-        @media (min-width: 780px) {
-          font-size: calc($fontSizeXXL * 2.5);
+        font-size: calc($fontSizeXXL * 2.5);
+        @media (max-width: 780px) {
+          font-size: $fontSizeXXL * 1.5;
         }
         color: $fontColor;
         margin: 0;
@@ -47,11 +47,12 @@ body{
       }
       p{
         font-size: $fontSizeXL;
-        text-align: justify;
+        text-align: left;
         color: $fontColor;
         font-family: "Open Sans";
         font-weight: lighter;
         @media(min-width: 780px){
+          text-align: justify;
           width: 50%;
         }
       }
@@ -64,6 +65,9 @@ body{
       position: relative;
       top:0;
       font-size: $fontSizeXL;
+      @media (max-width: 780px){
+        font-size: $fontSizeL;
+      }
       color: $fontColor;
       font-family: "Open Sans";
       font-weight: lighter;
@@ -89,9 +93,10 @@ body{
       font-weight: lighter;
       font-size: $fontSizeXL * 1.5;
       color: rgba(255, 255, 255, 0.5);
-      @media(min-width: 780px){
-        position: absolute;
-        bottom: 20px;
+      @media(max-width: 780px){
+        position: center;
+        padding-top: 30px ;
+        font-size: $fontSizeXL;
       }
     }
   }
