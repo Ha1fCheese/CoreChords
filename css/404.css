@@ -52,26 +52,27 @@ body .main .text_blocks {
   flex-direction: column;
 }
 body .main .text_blocks h1 {
-  font-size: 12vh;
+  font-size: 15vh;
   color: #fdfdfd;
   margin: 0;
   font-family: "Open Sans";
   font-weight: normal;
 }
-@media (min-width: 780px) {
+@media (max-width: 780px) {
   body .main .text_blocks h1 {
-    font-size: 15vh;
+    font-size: 9vh;
   }
 }
 body .main .text_blocks p {
   font-size: 3.5vh;
-  text-align: justify;
+  text-align: left;
   color: #fdfdfd;
   font-family: "Open Sans";
   font-weight: lighter;
 }
 @media (min-width: 780px) {
   body .main .text_blocks p {
+    text-align: justify;
     width: 50%;
   }
 }
@@ -93,6 +94,11 @@ body .back_div .back {
   background-color: transparent;
   box-shadow: none;
 }
+@media (max-width: 780px) {
+  body .back_div .back {
+    font-size: 2vh;
+  }
+}
 body .back_div .back:hover {
   border: 10px rgba(34, 127, 231, 0.5) solid;
   top: -5px;
@@ -109,10 +115,11 @@ body .site_name p {
   font-size: 5.25vh;
   color: rgba(255, 255, 255, 0.5);
 }
-@media (min-width: 780px) {
+@media (max-width: 780px) {
   body .site_name p {
-    position: absolute;
-    bottom: 20px;
+    position: center;
+    padding-top: 30px;
+    font-size: 3.5vh;
   }
 }
 
