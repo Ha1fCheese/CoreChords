@@ -1,0 +1,98 @@
+@import "constants";
+body{
+  background-color: $bgDivColor;
+  margin: 0;
+  padding: 0;
+  @media (max-width: 780px){
+    text-align: center;
+  }
+  .head{
+    margin: 0 5vw 0 5vw;
+    padding-top: calc(1.5vh + 1.5vw);
+    @media (max-width: 780px) {
+      display: flex;
+      justify-content: center;
+    }
+    .logo{
+      width: 131.97px*1.5;
+      height: 30.08px*1.5;
+      opacity: 0.5;
+    }
+  }
+  .main{
+    margin: 0 5vw 40px 5vw;
+    img{
+      position: absolute;
+      width: calc(30vh + 30vw);
+      right: 10px;
+      top:100px;
+      opacity: 1;
+      @media (max-width: 780px){
+        opacity: 0.3;
+      }
+    }
+    .text_blocks{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      h1{
+        font-size: $fontSizeXXL * 2;
+        @media (min-width: 780px) {
+          font-size: calc($fontSizeXXL * 2.5);
+        }
+        color: $fontColor;
+        margin: 0;
+        font-family: "Open Sans";
+        font-weight: normal;
+      }
+      p{
+        font-size: $fontSizeXL;
+        text-align: justify;
+        color: $fontColor;
+        font-family: "Open Sans";
+        font-weight: lighter;
+        @media(min-width: 780px){
+          width: 50%;
+        }
+      }
+    }
+  }
+  .back_div{
+    margin: 0 5vw 0 5vw;
+    .back{
+      transition: 0.3s ease-in-out;
+      position: relative;
+      top:0;
+      font-size: $fontSizeXL;
+      color: $fontColor;
+      font-family: "Open Sans";
+      font-weight: lighter;
+      text-decoration: none;
+      border: 10px $borderColor solid;
+      padding: 20px 30px 20px 30px;
+      border-radius: 40px 0 40px 0;
+      background-color: transparent;
+      box-shadow: none;
+    }
+    .back:hover{
+      border: 10px rgba(34, 127, 231, 0.5) solid;
+      top:-5px;
+      box-shadow: rgba(34, 127, 231, 0.5) 0 0 20px 0;
+      transition: 0.3s ease-in-out;
+    }
+  }
+  .site_name{
+    margin: 0 5vw 0 5vw;
+    p{
+      bottom: 10px;
+      font-family: "Open Sans";
+      font-weight: lighter;
+      font-size: $fontSizeXL * 1.5;
+      color: rgba(255, 255, 255, 0.5);
+      @media(min-width: 780px){
+        position: absolute;
+        bottom: 20px;
+      }
+    }
+  }
+}
