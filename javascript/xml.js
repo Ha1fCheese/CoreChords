@@ -48,6 +48,10 @@ document.addEventListener('DOMContentLoaded', function() {
         group.innerHTML = block[7].innerHTML;
         info__block.appendChild(group);
 
+        /*let marker = document.createElement('span');
+        marker.innerHTML = xmlDoc.getElementsByTagName(tags).innerHTML;
+        info__block.appendChild(marker);*/
+
         document.body.getElementsByClassName("popular_all_elements")[0].appendChild(popular__base);
     }
 
