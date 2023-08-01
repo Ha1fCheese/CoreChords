@@ -1,14 +1,22 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!DOCTYPE blocks [
         <!ELEMENT blocks (block)*>
-        <!ELEMENT block (src|href_img|song_name|group|group_src)*>
+        <!ELEMENT block (src|href_img|song_name|group|group_src|tags)*>
         <!ELEMENT src (#PCDATA)>
         <!ELEMENT href_img (#PCDATA)>
         <!ELEMENT song_name (#PCDATA)>
         <!ELEMENT group (#PCDATA)>
         <!ELEMENT group_src (#PCDATA)>
+        <!ELEMENT tags (#PCDATA)>
         ]>
 <blocks>
+    <block>
+        <src>bau_bai.html</src>
+        <href_img>content/images/groups/gambit.jpg</href_img>
+        <song_name>Баю бай</song_name>
+        <group>Гамбит</group>
+        <group_src>gambit.html</group_src>
+    </block>
     <block>
         <src>chords.html</src>
         <href_img>content/images/groups/egor.png</href_img>
@@ -78,6 +86,7 @@
         <song_name>Мусорный ветер</song_name>
         <group>Крематорий</group>
         <group_src>krematoriy.html</group_src>
+        <tags>calm</tags>
     </block>
     <block>
         <src>o_lubvi.html</src>
